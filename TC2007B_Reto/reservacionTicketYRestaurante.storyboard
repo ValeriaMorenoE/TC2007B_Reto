@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController id="Y6W-OH-hqX" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <datePicker hidden="YES" contentMode="scaleToFill" fixedFrame="YES" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="date" style="inline" translatesAutoresizingMaskIntoConstraints="NO" id="4Wn-Nr-5bG">
+                                <rect key="frame" x="0.0" y="445" width="414" height="337"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                            </datePicker>
+                            <textField opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Fecha:" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="lS4-z6-EK5">
+                                <rect key="frame" x="178" y="249" width="59" height="34"/>
+                                <color key="textColor" red="0.62747007610000005" green="0.62743180990000003" blue="0.62745207550000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="rdd-lH-PdI">
+                                <rect key="frame" x="249" y="249" width="97" height="34"/>
+                                <color key="backgroundColor" red="0.98039215686274506" green="0.93605762719999996" blue="0.79213279489999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Cantidad de Boletos: " textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="vU2-Lr-QGG">
+                                <rect key="frame" x="69" y="291" width="172" height="34"/>
+                                <color key="textColor" red="0.62747007610000005" green="0.62743180990000003" blue="0.62745207550000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="0" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="sjK-Xb-ySU">
+                                <rect key="frame" x="249" y="291" width="97" height="34"/>
+                                <color key="backgroundColor" red="0.98039215690000003" green="0.93605762719999996" blue="0.79213279489999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Precio:" textAlignment="natural" clearsOnBeginEditing="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="FiR-x7-4Yk">
+                                <rect key="frame" x="159" y="364" width="97" height="34"/>
+                                <color key="textColor" red="0.62747007610000005" green="0.62743180990000003" blue="0.62745207550000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="$0.00" clearsOnBeginEditing="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="De3-de-YY3">
+                                <rect key="frame" x="249" y="364" width="97" height="34"/>
+                                <color key="textColor" red="0.94389492269999997" green="0.78994923829999997" blue="0.41951048369999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <fontDescription key="fontDescription" name="AppleSDGothicNeo-Bold" family="Apple SD Gothic Neo" pointSize="20"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Boletos" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gh8-4t-KeD">
+                                <rect key="frame" x="149" y="78" width="116" height="43"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="36"/>
+                                <color key="textColor" red="0.62747007610000005" green="0.62743180990000003" blue="0.62745207550000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Gh8-4t-KeD" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="34" id="27g-4j-FB7"/>
+                            <constraint firstItem="rdd-lH-PdI" firstAttribute="leading" secondItem="lS4-z6-EK5" secondAttribute="trailing" constant="12" id="75f-dD-P7w"/>
+                            <constraint firstItem="vU2-Lr-QGG" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="69" id="DZk-OZ-Q4n"/>
+                            <constraint firstItem="lS4-z6-EK5" firstAttribute="centerX" secondItem="vDu-zF-Fre" secondAttribute="centerX" id="HyD-Ot-2MC"/>
+                            <constraint firstItem="vU2-Lr-QGG" firstAttribute="top" secondItem="lS4-z6-EK5" secondAttribute="bottom" constant="8" symbolic="YES" id="PDC-gf-Yw8"/>
+                            <constraint firstItem="sjK-Xb-ySU" firstAttribute="leading" secondItem="vU2-Lr-QGG" secondAttribute="trailing" constant="8" symbolic="YES" id="Rqa-zV-o5o"/>
+                            <constraint firstItem="De3-de-YY3" firstAttribute="top" secondItem="vU2-Lr-QGG" secondAttribute="bottom" constant="39" id="TfR-Zp-TaC"/>
+                            <constraint firstItem="rdd-lH-PdI" firstAttribute="top" secondItem="Gh8-4t-KeD" secondAttribute="bottom" constant="128" id="U3H-0x-dkF"/>
+                            <constraint firstItem="FiR-x7-4Yk" firstAttribute="top" secondItem="vU2-Lr-QGG" secondAttribute="bottom" constant="39" id="We7-54-crH"/>
+                            <constraint firstItem="sjK-Xb-ySU" firstAttribute="top" secondItem="rdd-lH-PdI" secondAttribute="bottom" constant="8" symbolic="YES" id="haB-pA-mqn"/>
+                            <constraint firstItem="lS4-z6-EK5" firstAttribute="top" secondItem="Gh8-4t-KeD" secondAttribute="bottom" constant="128" id="lcO-1K-EOe"/>
+                            <constraint firstItem="Gh8-4t-KeD" firstAttribute="centerX" secondItem="vDu-zF-Fre" secondAttribute="centerX" id="r3v-jB-lwb"/>
+                            <constraint firstItem="FiR-x7-4Yk" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="159" id="uas-yW-B1c"/>
+                            <constraint firstItem="De3-de-YY3" firstAttribute="leading" secondItem="FiR-x7-4Yk" secondAttribute="trailing" constant="-7" id="y2c-pt-5Ds"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="18.840579710144929" y="75"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
