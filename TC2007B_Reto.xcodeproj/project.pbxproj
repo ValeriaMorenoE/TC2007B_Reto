@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		00A02AAD26E8EF9E004E25EA /* Menu.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 00A02AAC26E8EF9E004E25EA /* Menu.storyboard */; };
+		00A02ABD26E8F585004E25EA /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00A02ABC26E8F585004E25EA /* MenuViewController.swift */; };
 		00F19A6026D5EE65006762A7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00F19A5F26D5EE65006762A7 /* AppDelegate.swift */; };
 		00F19A6226D5EE65006762A7 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00F19A6126D5EE65006762A7 /* SceneDelegate.swift */; };
 		00F19A6426D5EE65006762A7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00F19A6326D5EE65006762A7 /* ViewController.swift */; };
@@ -37,6 +39,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		00A02AAC26E8EF9E004E25EA /* Menu.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Menu.storyboard; sourceTree = "<group>"; };
+		00A02ABC26E8F585004E25EA /* MenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
 		00F19A5C26D5EE65006762A7 /* TC2007B_Reto.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TC2007B_Reto.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		00F19A5F26D5EE65006762A7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		00F19A6126D5EE65006762A7 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -112,6 +116,8 @@
 				00F19A6D26D5EE6D006762A7 /* Info.plist */,
 				2F9B1D5E26E8E6BD00C75E83 /* SignUpVC.swift */,
 				2F9B1D5F26E8E6BD00C75E83 /* SignUpVC.xib */,
+				00A02AAC26E8EF9E004E25EA /* Menu.storyboard */,
+				00A02ABC26E8F585004E25EA /* MenuViewController.swift */,
 			);
 			path = TC2007B_Reto;
 			sourceTree = "<group>";
@@ -237,6 +243,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				00A02AAD26E8EF9E004E25EA /* Menu.storyboard in Resources */,
 				2F9B1D6126E8E6BD00C75E83 /* SignUpVC.xib in Resources */,
 				00F19A6C26D5EE6D006762A7 /* LaunchScreen.storyboard in Resources */,
 				00F19A6926D5EE6D006762A7 /* Assets.xcassets in Resources */,
@@ -266,6 +273,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2F9B1D6026E8E6BD00C75E83 /* SignUpVC.swift in Sources */,
+				00A02ABD26E8F585004E25EA /* MenuViewController.swift in Sources */,
 				00F19A6426D5EE65006762A7 /* ViewController.swift in Sources */,
 				00F19A6026D5EE65006762A7 /* AppDelegate.swift in Sources */,
 				00F19A6226D5EE65006762A7 /* SceneDelegate.swift in Sources */,
