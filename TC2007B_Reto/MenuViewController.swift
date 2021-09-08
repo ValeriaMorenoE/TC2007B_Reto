@@ -40,15 +40,34 @@ class MenuViewController: UIViewController {
     
     @IBAction func exposicionesButtonPressed(_ sender: Any) {
         // hacia exposiciones
+        /*
+        let exposicionesStoryboard = UIStoryboard(name: "Exposiciones", bundle: nil)
+        let vc = exposicionesStoryboard.instantiateViewController(identifier: "expoMenuViewController") as! expoMenuViewController
+        
+        vc.modalPresentationStyle = .currentContext
+        self.present(vc, animated: true, completion: nil)
+ */
     }
+    
     @IBAction func reservacionesButtonPressed(_ sender: Any) {
         // hacia reservaciones de restaurante
+        /*let reservacionesStoryboard = UIStoryboard(name: "Reservaciones", bundle: nil)
+        let vc = reservacionesStoryboard.instantiateViewController(identifier: "reservacionesViewController") as! reservacionesViewController
+        
+        vc.modalPresentationStyle = .currentContext
+        self.present(vc, animated: true, completion: nil)
+         */
     }
     @IBAction func boletosButtonPressed(_ sender: Any) {
         // hacia compra de boletos
     }
     @IBAction func museo3dButtonPressed(_ sender: Any) {
         // hacia museo 3D
+        let museo3dStoryboard = UIStoryboard(name: "Museo3d", bundle: nil)
+        let vc = museo3dStoryboard.instantiateViewController(identifier: "Museo3dViewController") as! Museo3dViewController
+        
+        vc.modalPresentationStyle = .currentContext
+        self.present(vc, animated: true, completion: nil)
     }
     @IBAction func misComprasButtonPressed(_ sender: Any) {
         // hacia boletos y reservaciones comprados
