@@ -27,6 +27,7 @@
                     </label>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ugG-y7-kTa">
                         <rect key="frame" x="18" y="130" width="284" height="30"/>
+                        <color key="backgroundColor" red="0.87282943729999996" green="0.6849176884" blue="0.23904293779999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
                             <constraint firstAttribute="height" constant="30" id="MP2-1n-Kgn"/>
                         </constraints>
