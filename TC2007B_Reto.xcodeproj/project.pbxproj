@@ -15,9 +15,11 @@
 		00F19A6C26D5EE6D006762A7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 00F19A6A26D5EE6D006762A7 /* LaunchScreen.storyboard */; };
 		00F19A7726D5EE6F006762A7 /* TC2007B_RetoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00F19A7626D5EE6F006762A7 /* TC2007B_RetoTests.swift */; };
 		00F19A8226D5EE6F006762A7 /* TC2007B_RetoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00F19A8126D5EE6F006762A7 /* TC2007B_RetoUITests.swift */; };
-		FB6C972526E8E3D200DE96B4 /* reservacionTicketYRestaurante.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FB6C972426E8E3D200DE96B4 /* reservacionTicketYRestaurante.storyboard */; };
 		2F9B1D6026E8E6BD00C75E83 /* SignUpVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F9B1D5E26E8E6BD00C75E83 /* SignUpVC.swift */; };
 		2F9B1D6126E8E6BD00C75E83 /* SignUpVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2F9B1D5F26E8E6BD00C75E83 /* SignUpVC.xib */; };
+		FB6C972526E8E3D200DE96B4 /* reservacionTicketYRestaurante.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FB6C972426E8E3D200DE96B4 /* reservacionTicketYRestaurante.storyboard */; };
+		FB6C972726E8ED1E00DE96B4 /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB6C972626E8ED1E00DE96B4 /* MenuViewController.swift */; };
+		FB6C972926E8EF0F00DE96B4 /* TicketViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB6C972826E8EF0F00DE96B4 /* TicketViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,9 +54,11 @@
 		00F19A7D26D5EE6F006762A7 /* TC2007B_RetoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TC2007B_RetoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		00F19A8126D5EE6F006762A7 /* TC2007B_RetoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TC2007B_RetoUITests.swift; sourceTree = "<group>"; };
 		00F19A8326D5EE6F006762A7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		FB6C972426E8E3D200DE96B4 /* reservacionTicketYRestaurante.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = reservacionTicketYRestaurante.storyboard; sourceTree = "<group>"; };
 		2F9B1D5E26E8E6BD00C75E83 /* SignUpVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpVC.swift; sourceTree = "<group>"; };
 		2F9B1D5F26E8E6BD00C75E83 /* SignUpVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SignUpVC.xib; sourceTree = "<group>"; };
+		FB6C972426E8E3D200DE96B4 /* reservacionTicketYRestaurante.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = reservacionTicketYRestaurante.storyboard; sourceTree = "<group>"; };
+		FB6C972626E8ED1E00DE96B4 /* MenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
+		FB6C972826E8EF0F00DE96B4 /* TicketViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TicketViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,6 +119,8 @@
 				FB6C972426E8E3D200DE96B4 /* reservacionTicketYRestaurante.storyboard */,
 				2F9B1D5E26E8E6BD00C75E83 /* SignUpVC.swift */,
 				2F9B1D5F26E8E6BD00C75E83 /* SignUpVC.xib */,
+				FB6C972626E8ED1E00DE96B4 /* MenuViewController.swift */,
+				FB6C972826E8EF0F00DE96B4 /* TicketViewController.swift */,
 			);
 			path = TC2007B_Reto;
 			sourceTree = "<group>";
@@ -270,6 +276,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				2F9B1D6026E8E6BD00C75E83 /* SignUpVC.swift in Sources */,
+				FB6C972726E8ED1E00DE96B4 /* MenuViewController.swift in Sources */,
+				FB6C972926E8EF0F00DE96B4 /* TicketViewController.swift in Sources */,
 				00F19A6426D5EE65006762A7 /* ViewController.swift in Sources */,
 				00F19A6026D5EE65006762A7 /* AppDelegate.swift in Sources */,
 				00F19A6226D5EE65006762A7 /* SceneDelegate.swift in Sources */,
