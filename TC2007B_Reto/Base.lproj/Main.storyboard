@@ -91,7 +91,7 @@
                                     <color key="titleColor" systemColor="systemBackgroundColor"/>
                                 </state>
                                 <connections>
-                                    <segue destination="5kA-EM-OQO" kind="show" id="dnJ-i2-D7J"/>
+                                    <segue destination="5kA-EM-OQO" kind="show" id="sNN-sS-bb2"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -191,6 +191,9 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" title="Hacer reservaciones"/>
+                                <connections>
+                                    <action selector="showBuy:" destination="5kA-EM-OQO" eventType="touchUpInside" id="4E2-gf-YsM"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cFq-i6-Gth">
                                 <rect key="frame" x="20" y="455" width="166" height="229"/>

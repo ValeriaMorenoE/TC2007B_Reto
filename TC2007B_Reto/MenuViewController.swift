@@ -16,7 +16,7 @@ class MenuViewController: UIViewController {
     }
     
     @IBAction func showBuyTicket(_ sender: Any) {
-        let buyTicketView = TicketViewController(nibName: "TicketViewController", bundle: nil)
+        let buyTicketView = TicketRestaurantController(nibName: "TicketRestaurantController", bundle: nil)
         self.present(buyTicketView, animated: true, completion: nil)
     }
     

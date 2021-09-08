@@ -15,15 +15,32 @@ class TicketViewController: UIViewController {
     @IBOutlet weak var calendario: UIDatePicker!
     
     override func viewDidLoad() {
-        
+        let dateFormatter = DateFormatter()
+        dateFormatter.dateFormat = "dd/mm/YYYY"
+        let dateString = dateFormatter.string(from: calendario.date)
+        dateTextField.text = dateString
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
     }
     
-    @IBAction func pagar(_ sender: UIButton) {
+   
+    @IBAction func updatePrice(_ sender: Any) {
         let numBoletos = Double(cantTickets.text ?? "") ?? 0 * 40
         precio.text = String(numBoletos)
+    }
+    
+    @IBAction func pagar(_ sender: UIButton) {
+        
+    }
+    
+    @IBAction func selectDate(_ sender: Any) {
+        calendario.isHidden = true
+        calendario.isEnabled = false
+        let dateFormatter = DateFormatter()
+        dateFormatter.dateFormat = "dd/mm/YYYY"
+        let dateString = dateFormatter.string(from: calendario.date)
+        dateTextField.text = dateString
     }
     
     @IBAction func openCalendar(_ sender: Any) {
