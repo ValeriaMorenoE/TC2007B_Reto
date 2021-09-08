@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19158" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19141"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SignUpVC" customModule="TC2007B_Reto" customModuleProvider="target"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="MfH-fu-gAc">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Contraseña" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ga7-Ut-Qg5">
+                    <rect key="frame" x="50" y="388" width="314" height="34"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="t3D-W8-Nqs">
+                    <rect key="frame" x="50" y="462" width="314" height="30"/>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                    <state key="normal" title="Iniciar Sesión">
+                        <color key="titleColor" systemColor="systemOrangeColor"/>
+                        <color key="titleShadowColor" systemColor="systemOrangeColor"/>
+                    </state>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="¿No tienes Cuenta? " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="i7f-M8-DHu">
+                    <rect key="frame" x="87" y="796" width="153" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8N3-wo-wGW">
+                    <rect key="frame" x="245" y="792" width="76" height="30"/>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                    <state key="normal" title="Registrate">
+                        <color key="titleColor" systemColor="systemOrangeColor"/>
+                    </state>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Registrate" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jRm-87-R4S">
+                    <rect key="frame" x="141.5" y="238" width="131" height="36"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Crea una cuenta para acceder a Marco" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Otq-M5-NdJ">
+                    <rect key="frame" x="82" y="282" width="250" height="17"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="14"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nh9-bO-dC9">
+                    <rect key="frame" x="50" y="670" width="314" height="30"/>
+                    <color key="backgroundColor" systemColor="labelColor"/>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
+                    <state key="normal" title="Ingresar con Apple">
+                        <color key="titleColor" systemColor="systemBackgroundColor"/>
+                    </state>
+                </button>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="logo_marco_txt" translatesAutoresizingMaskIntoConstraints="NO" id="j0u-bE-U5R">
+                    <rect key="frame" x="87" y="85" width="240" height="53"/>
+                </imageView>
+                <textField opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Username" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="GN7-7u-hjs">
+                    <rect key="frame" x="50" y="327" width="314" height="34"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="7zj-UW-jib"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="ga7-Ut-Qg5" firstAttribute="centerX" secondItem="MfH-fu-gAc" secondAttribute="centerX" id="02g-47-txI"/>
+                <constraint firstItem="nh9-bO-dC9" firstAttribute="centerX" secondItem="MfH-fu-gAc" secondAttribute="centerX" id="0bP-mb-lZ4"/>
+                <constraint firstItem="ga7-Ut-Qg5" firstAttribute="top" secondItem="GN7-7u-hjs" secondAttribute="bottom" constant="40" id="2eH-mz-GWf"/>
+                <constraint firstItem="i7f-M8-DHu" firstAttribute="centerX" secondItem="MfH-fu-gAc" secondAttribute="centerX" constant="-43.5" id="2ic-7h-ydM"/>
+                <constraint firstItem="nh9-bO-dC9" firstAttribute="centerY" secondItem="MfH-fu-gAc" secondAttribute="centerY" constant="200" id="3zT-C3-Vog"/>
+                <constraint firstItem="GN7-7u-hjs" firstAttribute="leading" secondItem="7zj-UW-jib" secondAttribute="leading" constant="50" id="6xY-in-CXf"/>
+                <constraint firstItem="8N3-wo-wGW" firstAttribute="centerX" secondItem="MfH-fu-gAc" secondAttribute="centerX" constant="76" id="Cha-u0-Y6E"/>
+                <constraint firstItem="8N3-wo-wGW" firstAttribute="centerX" secondItem="MfH-fu-gAc" secondAttribute="centerX" constant="76" id="EPk-HL-yaM"/>
+                <constraint firstItem="jRm-87-R4S" firstAttribute="top" secondItem="j0u-bE-U5R" secondAttribute="bottom" constant="100" id="IR1-iN-VfI"/>
+                <constraint firstItem="t3D-W8-Nqs" firstAttribute="top" secondItem="ga7-Ut-Qg5" secondAttribute="bottom" constant="40" id="P3P-0q-bPc"/>
+                <constraint firstItem="7zj-UW-jib" firstAttribute="trailing" secondItem="GN7-7u-hjs" secondAttribute="trailing" constant="50" id="PYw-pm-Rm4"/>
+                <constraint firstItem="7zj-UW-jib" firstAttribute="trailing" secondItem="t3D-W8-Nqs" secondAttribute="trailing" constant="50" id="ZA5-Km-Pns"/>
+                <constraint firstItem="7zj-UW-jib" firstAttribute="trailing" secondItem="nh9-bO-dC9" secondAttribute="trailing" constant="50" id="fMd-QV-owE"/>
+                <constraint firstItem="ga7-Ut-Qg5" firstAttribute="leading" secondItem="7zj-UW-jib" secondAttribute="leading" constant="50" id="jWP-ef-Xh9"/>
+                <constraint firstItem="7zj-UW-jib" firstAttribute="bottom" secondItem="i7f-M8-DHu" secondAttribute="bottom" constant="45" id="jwp-Wc-DlF"/>
+                <constraint firstItem="t3D-W8-Nqs" firstAttribute="centerX" secondItem="MfH-fu-gAc" secondAttribute="centerX" id="k7m-Q2-85b"/>
+                <constraint firstItem="t3D-W8-Nqs" firstAttribute="top" secondItem="ga7-Ut-Qg5" secondAttribute="bottom" constant="40" id="kgH-Ea-Sau"/>
+                <constraint firstItem="nh9-bO-dC9" firstAttribute="leading" secondItem="7zj-UW-jib" secondAttribute="leading" constant="50" id="mOD-Nj-nhH"/>
+                <constraint firstItem="GN7-7u-hjs" firstAttribute="top" secondItem="jRm-87-R4S" secondAttribute="bottom" constant="40" id="qXa-r0-s1F"/>
+                <constraint firstItem="j0u-bE-U5R" firstAttribute="top" secondItem="MfH-fu-gAc" secondAttribute="top" constant="85" id="tbT-qm-K7R"/>
+                <constraint firstItem="7zj-UW-jib" firstAttribute="trailing" secondItem="ga7-Ut-Qg5" secondAttribute="trailing" constant="50" id="vs2-eF-T0q"/>
+                <constraint firstItem="jRm-87-R4S" firstAttribute="centerX" secondItem="MfH-fu-gAc" secondAttribute="centerX" id="x7Z-x5-YGA"/>
+                <constraint firstItem="GN7-7u-hjs" firstAttribute="centerX" secondItem="MfH-fu-gAc" secondAttribute="centerX" id="xi2-2J-tlY"/>
+                <constraint firstItem="7zj-UW-jib" firstAttribute="bottom" secondItem="8N3-wo-wGW" secondAttribute="bottom" constant="40" id="ywB-iR-keP"/>
+                <constraint firstItem="t3D-W8-Nqs" firstAttribute="leading" secondItem="7zj-UW-jib" secondAttribute="leading" constant="50" id="zcO-sj-H5i"/>
+            </constraints>
+            <point key="canvasLocation" x="-349" y="57"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="logo_marco_txt" width="288" height="53"/>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemOrangeColor">
+            <color red="1" green="0.58431372549019611" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
