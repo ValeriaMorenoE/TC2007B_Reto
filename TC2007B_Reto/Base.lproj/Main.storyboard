@@ -37,6 +37,9 @@
                                     <color key="titleColor" systemColor="systemOrangeColor"/>
                                     <color key="titleShadowColor" systemColor="systemOrangeColor"/>
                                 </state>
+                                <connections>
+                                    <action selector="showHome:" destination="BYZ-38-t0r" eventType="touchUpInside" id="bZq-Rq-Iy0"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="¿No tienes Cuenta? " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gRG-kx-lWd">
                                 <rect key="frame" x="80" y="811" width="153" height="21"/>
