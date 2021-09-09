@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
-    <device id="retina6_7" orientation="portrait" appearance="light"/>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17125"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -15,18 +15,18 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="¿Ya tienes una cuenta? " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="i7f-M8-DHu">
-                    <rect key="frame" x="68" y="818" width="179" height="21"/>
+                    <rect key="frame" x="68" y="819" width="179" height="21"/>
                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                     <nil key="textColor"/>
                     <nil key="highlightedColor"/>
                 </label>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jRm-87-R4S">
-                    <rect key="frame" x="50" y="255" width="314" height="35"/>
+                    <rect key="frame" x="50" y="255" width="314" height="36"/>
                     <attributedString key="attributedText">
                         <fragment content="Registrate">
                             <attributes>
                                 <color key="NSColor" red="0.1687981784" green="0.2429438531" blue="0.44459456209999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <font key="NSFont" size="30" name="SFPro-Bold"/>
+                                <font key="NSFont" metaFont="system" size="30"/>
                                 <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                             </attributes>
                         </fragment>
@@ -34,12 +34,12 @@
                     <nil key="highlightedColor"/>
                 </label>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Otq-M5-NdJ">
-                    <rect key="frame" x="50" y="304" width="314" height="17"/>
+                    <rect key="frame" x="50" y="305" width="314" height="17"/>
                     <attributedString key="attributedText">
                         <fragment content="Crea una cuenta para acceder a Marco">
                             <attributes>
                                 <color key="NSColor" red="0.1687981784" green="0.2429438531" blue="0.44459456209999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <font key="NSFont" size="14" name="SFPro-Light"/>
+                                <font key="NSFont" metaFont="system" size="14"/>
                                 <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                             </attributes>
                         </fragment>
@@ -47,7 +47,7 @@
                     <nil key="highlightedColor"/>
                 </label>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="nh9-bO-dC9">
-                    <rect key="frame" x="50" y="735" width="314" height="43"/>
+                    <rect key="frame" x="50" y="736" width="314" height="43"/>
                     <color key="backgroundColor" systemColor="labelColor"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="43" id="shf-Ye-dDV"/>
@@ -57,7 +57,7 @@
                             <fragment content=" Continuar con Apple">
                                 <attributes>
                                     <color key="NSColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                    <font key="NSFont" size="20" name="SFProDisplay-Regular"/>
+                                    <font key="NSFont" metaFont="system" size="20"/>
                                 </attributes>
                             </fragment>
                         </attributedString>
@@ -67,7 +67,7 @@
                     <rect key="frame" x="-333" y="-637" width="1080" height="832"/>
                 </imageView>
                 <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Nombre" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="GN7-7u-hjs">
-                    <rect key="frame" x="50" y="391" width="314" height="45"/>
+                    <rect key="frame" x="50" y="392" width="314" height="45"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="45" id="s6H-95-YBC"/>
                     </constraints>
@@ -75,7 +75,7 @@
                     <textInputTraits key="textInputTraits"/>
                 </textField>
                 <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Usuario" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ga7-Ut-Qg5">
-                    <rect key="frame" x="50" y="466" width="314" height="45"/>
+                    <rect key="frame" x="50" y="467" width="314" height="45"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="45" id="z1R-Mh-4km"/>
                     </constraints>
@@ -83,7 +83,7 @@
                     <textInputTraits key="textInputTraits"/>
                 </textField>
                 <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Contraseña" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Uom-9R-2lQ">
-                    <rect key="frame" x="50" y="541" width="314" height="45"/>
+                    <rect key="frame" x="50" y="542" width="314" height="45"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="45" id="E3K-qx-kCM"/>
                     </constraints>
@@ -91,7 +91,7 @@
                     <textInputTraits key="textInputTraits"/>
                 </textField>
                 <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Confirmar Contraseña" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="zOC-rJ-W22">
-                    <rect key="frame" x="50" y="616" width="314" height="45"/>
+                    <rect key="frame" x="50" y="617" width="314" height="45"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="45" id="oKH-Vl-DmJ"/>
                     </constraints>
@@ -102,20 +102,20 @@
                     <rect key="frame" x="100" y="82" width="214" height="53"/>
                 </imageView>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="t3D-W8-Nqs">
-                    <rect key="frame" x="70" y="681" width="274" height="34"/>
+                    <rect key="frame" x="70" y="682" width="274" height="34"/>
                     <state key="normal">
                         <attributedString key="attributedTitle">
                             <fragment content="Crear Cuenta">
                                 <attributes>
                                     <color key="NSColor" systemColor="systemOrangeColor"/>
-                                    <font key="NSFont" size="19" name="SFPro-Bold"/>
+                                    <font key="NSFont" metaFont="system" size="19"/>
                                 </attributes>
                             </fragment>
                         </attributedString>
                     </state>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8N3-wo-wGW">
-                    <rect key="frame" x="248" y="818" width="103" height="21"/>
+                    <rect key="frame" x="248" y="819" width="103" height="21"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="21" id="XJj-eE-1es"/>
                     </constraints>
