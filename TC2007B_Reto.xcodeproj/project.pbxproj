@@ -11,6 +11,10 @@
 		00A02ABD26E8F585004E25EA /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00A02ABC26E8F585004E25EA /* MenuViewController.swift */; };
 		00A02AD126E90CED004E25EA /* Museo3d.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 00A02AD026E90CED004E25EA /* Museo3d.storyboard */; };
 		00A02AD626E90EB4004E25EA /* Museo3dViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00A02AD526E90EB4004E25EA /* Museo3dViewController.swift */; };
+		00A02B1426EA55F0004E25EA /* HistorialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00A02B1226EA55F0004E25EA /* HistorialViewController.swift */; };
+		00A02B1526EA55F0004E25EA /* HistorialViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 00A02B1326EA55F0004E25EA /* HistorialViewController.xib */; };
+		00A02B1B26EA56CE004E25EA /* HistorialTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00A02B1926EA56CE004E25EA /* HistorialTableViewCell.swift */; };
+		00A02B1C26EA56CE004E25EA /* HistorialTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 00A02B1A26EA56CE004E25EA /* HistorialTableViewCell.xib */; };
 		00F19A6026D5EE65006762A7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00F19A5F26D5EE65006762A7 /* AppDelegate.swift */; };
 		00F19A6226D5EE65006762A7 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00F19A6126D5EE65006762A7 /* SceneDelegate.swift */; };
 		00F19A6426D5EE65006762A7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00F19A6326D5EE65006762A7 /* ViewController.swift */; };
@@ -21,6 +25,10 @@
 		00F19A8226D5EE6F006762A7 /* TC2007B_RetoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00F19A8126D5EE6F006762A7 /* TC2007B_RetoUITests.swift */; };
 		2F9B1D6026E8E6BD00C75E83 /* SignUpVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F9B1D5E26E8E6BD00C75E83 /* SignUpVC.swift */; };
 		2F9B1D6126E8E6BD00C75E83 /* SignUpVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2F9B1D5F26E8E6BD00C75E83 /* SignUpVC.xib */; };
+		FB6C972C26E9018400DE96B4 /* TicketRestaurantController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB6C972A26E9018400DE96B4 /* TicketRestaurantController.swift */; };
+		FB6C972D26E9018400DE96B4 /* TicketRestaurantController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FB6C972B26E9018400DE96B4 /* TicketRestaurantController.xib */; };
+		FBE9414D26EA3D7F0038C0B1 /* RestaurantViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBE9414B26EA3D7F0038C0B1 /* RestaurantViewController.swift */; };
+		FBE9414E26EA3D7F0038C0B1 /* RestaurantViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FBE9414C26EA3D7F0038C0B1 /* RestaurantViewController.xib */; };
 		FBFC48BD26E8F28A000B7FAF /* expoViewCellTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBFC48BB26E8F28A000B7FAF /* expoViewCellTableViewCell.swift */; };
 		FBFC48BE26E8F28A000B7FAF /* expoViewCellTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FBFC48BC26E8F28A000B7FAF /* expoViewCellTableViewCell.xib */; };
 		FBFC48C126E8F655000B7FAF /* expoMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBFC48BF26E8F655000B7FAF /* expoMenuViewController.swift */; };
@@ -49,6 +57,10 @@
 		00A02ABC26E8F585004E25EA /* MenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
 		00A02AD026E90CED004E25EA /* Museo3d.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Museo3d.storyboard; sourceTree = "<group>"; };
 		00A02AD526E90EB4004E25EA /* Museo3dViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Museo3dViewController.swift; sourceTree = "<group>"; };
+		00A02B1226EA55F0004E25EA /* HistorialViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistorialViewController.swift; sourceTree = "<group>"; };
+		00A02B1326EA55F0004E25EA /* HistorialViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HistorialViewController.xib; sourceTree = "<group>"; };
+		00A02B1926EA56CE004E25EA /* HistorialTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistorialTableViewCell.swift; sourceTree = "<group>"; };
+		00A02B1A26EA56CE004E25EA /* HistorialTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HistorialTableViewCell.xib; sourceTree = "<group>"; };
 		00F19A5C26D5EE65006762A7 /* TC2007B_Reto.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TC2007B_Reto.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		00F19A5F26D5EE65006762A7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		00F19A6126D5EE65006762A7 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -65,6 +77,10 @@
 		00F19A8326D5EE6F006762A7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2F9B1D5E26E8E6BD00C75E83 /* SignUpVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpVC.swift; sourceTree = "<group>"; };
 		2F9B1D5F26E8E6BD00C75E83 /* SignUpVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SignUpVC.xib; sourceTree = "<group>"; };
+		FB6C972A26E9018400DE96B4 /* TicketRestaurantController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TicketRestaurantController.swift; sourceTree = "<group>"; };
+		FB6C972B26E9018400DE96B4 /* TicketRestaurantController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TicketRestaurantController.xib; sourceTree = "<group>"; };
+		FBE9414B26EA3D7F0038C0B1 /* RestaurantViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantViewController.swift; sourceTree = "<group>"; };
+		FBE9414C26EA3D7F0038C0B1 /* RestaurantViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RestaurantViewController.xib; sourceTree = "<group>"; };
 		FBFC48BB26E8F28A000B7FAF /* expoViewCellTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = expoViewCellTableViewCell.swift; sourceTree = "<group>"; };
 		FBFC48BC26E8F28A000B7FAF /* expoViewCellTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = expoViewCellTableViewCell.xib; sourceTree = "<group>"; };
 		FBFC48BF26E8F655000B7FAF /* expoMenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = expoMenuViewController.swift; sourceTree = "<group>"; };
@@ -129,10 +145,18 @@
 				00F19A6D26D5EE6D006762A7 /* Info.plist */,
 				2F9B1D5E26E8E6BD00C75E83 /* SignUpVC.swift */,
 				2F9B1D5F26E8E6BD00C75E83 /* SignUpVC.xib */,
+				FB6C972A26E9018400DE96B4 /* TicketRestaurantController.swift */,
+				FB6C972B26E9018400DE96B4 /* TicketRestaurantController.xib */,
+				FBE9414B26EA3D7F0038C0B1 /* RestaurantViewController.swift */,
+				FBE9414C26EA3D7F0038C0B1 /* RestaurantViewController.xib */,
 				00A02AAC26E8EF9E004E25EA /* Menu.storyboard */,
 				00A02ABC26E8F585004E25EA /* MenuViewController.swift */,
 				00A02AD026E90CED004E25EA /* Museo3d.storyboard */,
 				00A02AD526E90EB4004E25EA /* Museo3dViewController.swift */,
+				00A02B1226EA55F0004E25EA /* HistorialViewController.swift */,
+				00A02B1326EA55F0004E25EA /* HistorialViewController.xib */,
+				00A02B1926EA56CE004E25EA /* HistorialTableViewCell.swift */,
+				00A02B1A26EA56CE004E25EA /* HistorialTableViewCell.xib */,
 			);
 			path = TC2007B_Reto;
 			sourceTree = "<group>";
@@ -273,10 +297,14 @@
 				00A02AD126E90CED004E25EA /* Museo3d.storyboard in Resources */,
 				2F9B1D6126E8E6BD00C75E83 /* SignUpVC.xib in Resources */,
 				00F19A6C26D5EE6D006762A7 /* LaunchScreen.storyboard in Resources */,
+				FB6C972D26E9018400DE96B4 /* TicketRestaurantController.xib in Resources */,
+				00A02B1C26EA56CE004E25EA /* HistorialTableViewCell.xib in Resources */,
 				FBFC48BE26E8F28A000B7FAF /* expoViewCellTableViewCell.xib in Resources */,
+				00A02B1526EA55F0004E25EA /* HistorialViewController.xib in Resources */,
 				FBFC48C226E8F655000B7FAF /* expoMenuViewController.xib in Resources */,
 				00F19A6926D5EE6D006762A7 /* Assets.xcassets in Resources */,
 				00F19A6726D5EE65006762A7 /* Main.storyboard in Resources */,
+				FBE9414E26EA3D7F0038C0B1 /* RestaurantViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -301,6 +329,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FB6C972C26E9018400DE96B4 /* TicketRestaurantController.swift in Sources */,
+				00A02B1B26EA56CE004E25EA /* HistorialTableViewCell.swift in Sources */,
+				FBE9414D26EA3D7F0038C0B1 /* RestaurantViewController.swift in Sources */,
 				2F9B1D6026E8E6BD00C75E83 /* SignUpVC.swift in Sources */,
 				00A02ABD26E8F585004E25EA /* MenuViewController.swift in Sources */,
 				00F19A6426D5EE65006762A7 /* ViewController.swift in Sources */,
@@ -309,6 +340,7 @@
 				00A02AD626E90EB4004E25EA /* Museo3dViewController.swift in Sources */,
 				00F19A6026D5EE65006762A7 /* AppDelegate.swift in Sources */,
 				00F19A6226D5EE65006762A7 /* SceneDelegate.swift in Sources */,
+				00A02B1426EA55F0004E25EA /* HistorialViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

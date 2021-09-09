@@ -11,7 +11,6 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="TicketRestaurantController" customModule="TC2007B_Reto" customModuleProvider="target">
             <connections>
                 <outlet property="cantTickets" destination="645-nc-kgN" id="R1V-Lk-cG2"/>
-                <outlet property="precio" destination="Mul-ON-nPn" id="eHk-uO-dqH"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
