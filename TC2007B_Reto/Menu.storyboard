@@ -32,7 +32,6 @@
                                 <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" title="Mis boletos y reservaciones"/>
                                 <connections>
-                                    <action selector="misComprasButton:" destination="azw-Q1-gvX" eventType="touchUpInside" id="Kye-DO-N1R"/>
                                     <action selector="misComprasButtonPressed:" destination="azw-Q1-gvX" eventType="touchUpInside" id="XLq-F3-aIJ"/>
                                 </connections>
                             </button>
