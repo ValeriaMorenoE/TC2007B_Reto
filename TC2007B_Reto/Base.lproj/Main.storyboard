@@ -53,6 +53,9 @@
                                 <state key="normal" title="Registrate">
                                     <color key="titleColor" systemColor="systemOrangeColor"/>
                                 </state>
+                                <connections>
+                                    <action selector="showSignUp:" destination="BYZ-38-t0r" eventType="touchUpInside" id="aX1-Tl-f6J"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="N2q-IR-Csb">
                                 <rect key="frame" x="65.5" y="467" width="283" height="35"/>

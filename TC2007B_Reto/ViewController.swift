@@ -24,5 +24,11 @@ class ViewController: UIViewController {
         self.present(vc, animated: true, completion: nil)
     }
     
+    @IBAction func showSignUp(_ sender: Any) {
+        let signup = SignUpVC(nibName: "SignUpVC", bundle: nil)
+        self.present(signup, animated: true, completion: nil)
+    }
+    
+    
 }
 
