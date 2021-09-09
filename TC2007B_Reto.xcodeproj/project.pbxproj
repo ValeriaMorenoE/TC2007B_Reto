@@ -29,7 +29,6 @@
 		FBFC48BE26E8F28A000B7FAF /* expoViewCellTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FBFC48BC26E8F28A000B7FAF /* expoViewCellTableViewCell.xib */; };
 		FBFC48C126E8F655000B7FAF /* expoMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBFC48BF26E8F655000B7FAF /* expoMenuViewController.swift */; };
 		FBFC48C226E8F655000B7FAF /* expoMenuViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FBFC48C026E8F655000B7FAF /* expoMenuViewController.xib */; };
-
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -70,10 +69,12 @@
 		00F19A8326D5EE6F006762A7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2F9B1D5E26E8E6BD00C75E83 /* SignUpVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpVC.swift; sourceTree = "<group>"; };
 		2F9B1D5F26E8E6BD00C75E83 /* SignUpVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SignUpVC.xib; sourceTree = "<group>"; };
+
 		FB6C972A26E9018400DE96B4 /* TicketRestaurantController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TicketRestaurantController.swift; sourceTree = "<group>"; };
 		FB6C972B26E9018400DE96B4 /* TicketRestaurantController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TicketRestaurantController.xib; sourceTree = "<group>"; };
 		FBE9414B26EA3D7F0038C0B1 /* RestaurantViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantViewController.swift; sourceTree = "<group>"; };
 		FBE9414C26EA3D7F0038C0B1 /* RestaurantViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RestaurantViewController.xib; sourceTree = "<group>"; };
+
 		FBFC48BB26E8F28A000B7FAF /* expoViewCellTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = expoViewCellTableViewCell.swift; sourceTree = "<group>"; };
 		FBFC48BC26E8F28A000B7FAF /* expoViewCellTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = expoViewCellTableViewCell.xib; sourceTree = "<group>"; };
 		FBFC48BF26E8F655000B7FAF /* expoMenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = expoMenuViewController.swift; sourceTree = "<group>"; };
@@ -139,10 +140,12 @@
 				00F19A6D26D5EE6D006762A7 /* Info.plist */,
 				2F9B1D5E26E8E6BD00C75E83 /* SignUpVC.swift */,
 				2F9B1D5F26E8E6BD00C75E83 /* SignUpVC.xib */,
+
 				FB6C972A26E9018400DE96B4 /* TicketRestaurantController.swift */,
 				FB6C972B26E9018400DE96B4 /* TicketRestaurantController.xib */,
 				FBE9414B26EA3D7F0038C0B1 /* RestaurantViewController.swift */,
 				FBE9414C26EA3D7F0038C0B1 /* RestaurantViewController.xib */,
+
 				00A02AAC26E8EF9E004E25EA /* Menu.storyboard */,
 				00A02ABC26E8F585004E25EA /* MenuViewController.swift */,
 				00A02AD026E90CED004E25EA /* Museo3d.storyboard */,
@@ -287,15 +290,11 @@
 				00A02AD126E90CED004E25EA /* Museo3d.storyboard in Resources */,
 				2F9B1D6126E8E6BD00C75E83 /* SignUpVC.xib in Resources */,
 				00F19A6C26D5EE6D006762A7 /* LaunchScreen.storyboard in Resources */,
-
 				FB6C972D26E9018400DE96B4 /* TicketRestaurantController.xib in Resources */,
-
 				FBFC48BE26E8F28A000B7FAF /* expoViewCellTableViewCell.xib in Resources */,
 				FBFC48C226E8F655000B7FAF /* expoMenuViewController.xib in Resources */,
-
 				00F19A6926D5EE6D006762A7 /* Assets.xcassets in Resources */,
 				00F19A6726D5EE65006762A7 /* Main.storyboard in Resources */,
-				FBE9414E26EA3D7F0038C0B1 /* RestaurantViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -320,12 +319,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FB6C972C26E9018400DE96B4 /* TicketRestaurantController.swift in Sources */,
-				FBE9414D26EA3D7F0038C0B1 /* RestaurantViewController.swift in Sources */,
 				2F9B1D6026E8E6BD00C75E83 /* SignUpVC.swift in Sources */,
-
 				00A02ABD26E8F585004E25EA /* MenuViewController.swift in Sources */,
-
 				00F19A6426D5EE65006762A7 /* ViewController.swift in Sources */,
 				FBFC48BD26E8F28A000B7FAF /* expoViewCellTableViewCell.swift in Sources */,
 				FBFC48C126E8F655000B7FAF /* expoMenuViewController.swift in Sources */,
