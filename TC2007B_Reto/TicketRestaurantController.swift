@@ -12,30 +12,31 @@ class TicketRestaurantController: UIViewController {
     @IBOutlet weak var cantTickets: UITextField!
     @IBOutlet weak var precio: UITextField!
     @IBOutlet weak var calendar: UIDatePicker!
+    @IBOutlet weak var calendarContainer: UITableViewCell!
     
     override func viewDidLoad() {
-        let dateFormatter = DateFormatter()
-        dateFormatter.dateFormat = "dd/MM/YY"
-        let dateString = dateFormatter.string(from: calendar.date)
-        dateText.text = dateString
+//        let dateFormatter = DateFormatter()
+//        dateFormatter.dateFormat = "dd/MM/YY"
+//        let dateString = dateFormatter.string(from: calendar.date)
+//        dateText.text = dateString
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
     }
  
-    @IBAction func openCalendar(_ sender: UITextField) {
-        calendar.isHidden = false
-        calendar.isEnabled = true
-    }
+//    @IBAction func openCalendar(_ sender: UITextField) {
+//        calendarContainer.isHidden = false
+//        calendar.isEnabled = true
+//    }
     
-    @IBAction func selectDate(_ sender: Any) {
-        calendar.isHidden = true
-        calendar.isEnabled = false
-        let dateFormatter = DateFormatter()
-        dateFormatter.dateFormat = "dd/MM/YY"
-        let dateString = dateFormatter.string(from: calendar.date)
-        dateText.text = dateString
-    }
+//    @IBAction func selectDate(_ sender: Any) {
+//        calendarContainer.isHidden = true
+//        calendar.isEnabled = false
+//        let dateFormatter = DateFormatter()
+//        dateFormatter.dateFormat = "dd/MM/YY"
+//        let dateString = dateFormatter.string(from: calendar.date)
+//        dateText.text = dateString
+//    }
     
     @IBAction func updatePrice(_ sender: Any) {
         let numBoletos = Int(cantTickets.text ?? "") ?? 0

@@ -21,6 +21,8 @@
 		FB6C972926E8EF0F00DE96B4 /* TicketViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB6C972826E8EF0F00DE96B4 /* TicketViewController.swift */; };
 		FB6C972C26E9018400DE96B4 /* TicketRestaurantController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB6C972A26E9018400DE96B4 /* TicketRestaurantController.swift */; };
 		FB6C972D26E9018400DE96B4 /* TicketRestaurantController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FB6C972B26E9018400DE96B4 /* TicketRestaurantController.xib */; };
+		FBE9414D26EA3D7F0038C0B1 /* RestaurantViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBE9414B26EA3D7F0038C0B1 /* RestaurantViewController.swift */; };
+		FBE9414E26EA3D7F0038C0B1 /* RestaurantViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FBE9414C26EA3D7F0038C0B1 /* RestaurantViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,6 +63,8 @@
 		FB6C972826E8EF0F00DE96B4 /* TicketViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; lineEnding = 1; path = TicketViewController.swift; sourceTree = "<group>"; };
 		FB6C972A26E9018400DE96B4 /* TicketRestaurantController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TicketRestaurantController.swift; sourceTree = "<group>"; };
 		FB6C972B26E9018400DE96B4 /* TicketRestaurantController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TicketRestaurantController.xib; sourceTree = "<group>"; };
+		FBE9414B26EA3D7F0038C0B1 /* RestaurantViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantViewController.swift; sourceTree = "<group>"; };
+		FBE9414C26EA3D7F0038C0B1 /* RestaurantViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RestaurantViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -124,6 +128,8 @@
 				FB6C972A26E9018400DE96B4 /* TicketRestaurantController.swift */,
 				FB6C972626E8ED1E00DE96B4 /* MenuViewController.swift */,
 				FB6C972B26E9018400DE96B4 /* TicketRestaurantController.xib */,
+				FBE9414B26EA3D7F0038C0B1 /* RestaurantViewController.swift */,
+				FBE9414C26EA3D7F0038C0B1 /* RestaurantViewController.xib */,
 			);
 			path = TC2007B_Reto;
 			sourceTree = "<group>";
@@ -254,6 +260,7 @@
 				FB6C972D26E9018400DE96B4 /* TicketRestaurantController.xib in Resources */,
 				00F19A6926D5EE6D006762A7 /* Assets.xcassets in Resources */,
 				00F19A6726D5EE65006762A7 /* Main.storyboard in Resources */,
+				FBE9414E26EA3D7F0038C0B1 /* RestaurantViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -279,6 +286,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FB6C972C26E9018400DE96B4 /* TicketRestaurantController.swift in Sources */,
+				FBE9414D26EA3D7F0038C0B1 /* RestaurantViewController.swift in Sources */,
 				2F9B1D6026E8E6BD00C75E83 /* SignUpVC.swift in Sources */,
 				FB6C972726E8ED1E00DE96B4 /* MenuViewController.swift in Sources */,
 				FB6C972926E8EF0F00DE96B4 /* TicketViewController.swift in Sources */,
