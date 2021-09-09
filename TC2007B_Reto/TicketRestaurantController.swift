@@ -10,7 +10,7 @@ import UIKit
 class TicketRestaurantController: UIViewController {
     @IBOutlet weak var dateText: UITextField!
     @IBOutlet weak var cantTickets: UITextField!
-    @IBOutlet weak var precio: UITextField!
+    @IBOutlet weak var precio: UILabel!
     @IBOutlet weak var calendar: UIDatePicker!
     @IBOutlet weak var calendarContainer: UITableViewCell!
     
@@ -40,7 +40,7 @@ class TicketRestaurantController: UIViewController {
     
     @IBAction func updatePrice(_ sender: Any) {
         let numBoletos = Int(cantTickets.text ?? "") ?? 0
-        precio.text = "$" + String(numBoletos * 40)
+        precio.text = "$" + String(numBoletos*40)
     }
     
     /*
