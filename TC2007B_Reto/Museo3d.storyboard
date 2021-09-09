@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17125"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Museo 3d View Controller-->
+        <scene sceneID="Drb-AE-zmh">
+            <objects>
+                <viewController storyboardIdentifier="Museo3dViewController" id="xf8-gy-s7h" customClass="Museo3dViewController" customModule="TC2007B_Reto" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="J03-L3-26R">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="circle_reg" translatesAutoresizingMaskIntoConstraints="NO" id="jYz-UF-g3p">
+                                <rect key="frame" x="-333" y="-639" width="1080" height="832"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo_marco_txt" translatesAutoresizingMaskIntoConstraints="NO" id="IMi-kn-IQH">
+                                <rect key="frame" x="91" y="90" width="232" height="53"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Aquí va el Museo 3D" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pjA-TK-L4b">
+                                <rect key="frame" x="129" y="437.5" width="156" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Gvh-dF-zXO"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="IMi-kn-IQH" firstAttribute="top" secondItem="Gvh-dF-zXO" secondAttribute="top" constant="46" id="9an-wK-4i1"/>
+                            <constraint firstItem="jYz-UF-g3p" firstAttribute="top" secondItem="J03-L3-26R" secondAttribute="top" constant="-639" id="BK6-fv-Z5l"/>
+                            <constraint firstItem="jYz-UF-g3p" firstAttribute="leading" secondItem="J03-L3-26R" secondAttribute="leading" constant="-333" id="DPj-jY-HQj"/>
+                            <constraint firstItem="IMi-kn-IQH" firstAttribute="leading" secondItem="Gvh-dF-zXO" secondAttribute="leading" constant="91" id="Qb5-Tm-P8L"/>
+                            <constraint firstAttribute="trailing" secondItem="jYz-UF-g3p" secondAttribute="trailing" constant="-333" id="Sb4-An-D95"/>
+                            <constraint firstItem="pjA-TK-L4b" firstAttribute="centerX" secondItem="J03-L3-26R" secondAttribute="centerX" id="XCl-Re-2dW"/>
+                            <constraint firstItem="pjA-TK-L4b" firstAttribute="centerY" secondItem="J03-L3-26R" secondAttribute="centerY" id="ohU-6v-rk4"/>
+                            <constraint firstItem="Gvh-dF-zXO" firstAttribute="trailing" secondItem="IMi-kn-IQH" secondAttribute="trailing" constant="91" id="soR-T1-JLW"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="KH8-44-Xnv" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="412" y="182"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="circle_reg" width="1080" height="832"/>
+        <image name="logo_marco_txt" width="288" height="53"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
