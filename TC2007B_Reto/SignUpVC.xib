@@ -1,17 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
-    <device id="retina6_1" orientation="portrait" appearance="light"/>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_7" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17125"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
-        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SignUpVC" customModule="TC2007B_Reto" customModuleProvider="target"/>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SignUpVC" customModule="TC2007B_Reto" customModuleProvider="target">
+            <connections>
+                <outlet property="view" destination="MfH-fu-gAc" id="K7t-Pj-X5r"/>
+            </connections>
+        </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
         <view contentMode="scaleToFill" id="MfH-fu-gAc">
-            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="¿Ya tienes una cuenta? " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="i7f-M8-DHu">
@@ -21,7 +25,7 @@
                     <nil key="highlightedColor"/>
                 </label>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jRm-87-R4S">
-                    <rect key="frame" x="50" y="255" width="314" height="36"/>
+                    <rect key="frame" x="50" y="255" width="328" height="36"/>
                     <attributedString key="attributedText">
                         <fragment content="Registrate">
                             <attributes>
@@ -34,7 +38,7 @@
                     <nil key="highlightedColor"/>
                 </label>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Otq-M5-NdJ">
-                    <rect key="frame" x="50" y="305" width="314" height="17"/>
+                    <rect key="frame" x="50" y="305" width="328" height="17"/>
                     <attributedString key="attributedText">
                         <fragment content="Crea una cuenta para acceder a Marco">
                             <attributes>
@@ -47,7 +51,7 @@
                     <nil key="highlightedColor"/>
                 </label>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="nh9-bO-dC9">
-                    <rect key="frame" x="50" y="736" width="314" height="43"/>
+                    <rect key="frame" x="50" y="736" width="328" height="43"/>
                     <color key="backgroundColor" systemColor="labelColor"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="43" id="shf-Ye-dDV"/>
@@ -64,10 +68,10 @@
                     </state>
                 </button>
                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="circle_reg" translatesAutoresizingMaskIntoConstraints="NO" id="QeX-1w-YeQ">
-                    <rect key="frame" x="-333" y="-637" width="1080" height="832"/>
+                    <rect key="frame" x="-326" y="-637" width="1080" height="832"/>
                 </imageView>
                 <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Nombre" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="GN7-7u-hjs">
-                    <rect key="frame" x="50" y="392" width="314" height="45"/>
+                    <rect key="frame" x="50" y="392" width="328" height="45"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="45" id="s6H-95-YBC"/>
                     </constraints>
@@ -75,7 +79,7 @@
                     <textInputTraits key="textInputTraits"/>
                 </textField>
                 <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Usuario" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ga7-Ut-Qg5">
-                    <rect key="frame" x="50" y="467" width="314" height="45"/>
+                    <rect key="frame" x="50" y="467" width="328" height="45"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="45" id="z1R-Mh-4km"/>
                     </constraints>
@@ -83,7 +87,7 @@
                     <textInputTraits key="textInputTraits"/>
                 </textField>
                 <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Contraseña" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Uom-9R-2lQ">
-                    <rect key="frame" x="50" y="542" width="314" height="45"/>
+                    <rect key="frame" x="50" y="542" width="328" height="45"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="45" id="E3K-qx-kCM"/>
                     </constraints>
@@ -91,7 +95,7 @@
                     <textInputTraits key="textInputTraits"/>
                 </textField>
                 <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Confirmar Contraseña" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="zOC-rJ-W22">
-                    <rect key="frame" x="50" y="617" width="314" height="45"/>
+                    <rect key="frame" x="50" y="617" width="328" height="45"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="45" id="oKH-Vl-DmJ"/>
                     </constraints>
@@ -99,10 +103,10 @@
                     <textInputTraits key="textInputTraits"/>
                 </textField>
                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo_marco_txt" translatesAutoresizingMaskIntoConstraints="NO" id="j0u-bE-U5R">
-                    <rect key="frame" x="100" y="82" width="214" height="53"/>
+                    <rect key="frame" x="100" y="82" width="228" height="53"/>
                 </imageView>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="t3D-W8-Nqs">
-                    <rect key="frame" x="70" y="682" width="274" height="34"/>
+                    <rect key="frame" x="70" y="682" width="288" height="34"/>
                     <state key="normal">
                         <attributedString key="attributedTitle">
                             <fragment content="Crear Cuenta">
@@ -115,7 +119,7 @@
                     </state>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8N3-wo-wGW">
-                    <rect key="frame" x="248" y="819" width="103" height="21"/>
+                    <rect key="frame" x="248" y="819" width="117" height="21"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="21" id="XJj-eE-1es"/>
                     </constraints>
@@ -127,6 +131,9 @@
             </subviews>
             <viewLayoutGuide key="safeArea" id="7zj-UW-jib"/>
             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <accessibility key="accessibilityConfiguration">
+                <accessibilityTraits key="traits" button="YES"/>
+            </accessibility>
             <constraints>
                 <constraint firstItem="jRm-87-R4S" firstAttribute="centerX" secondItem="Uom-9R-2lQ" secondAttribute="centerX" id="0Bo-bh-BKy"/>
                 <constraint firstItem="jRm-87-R4S" firstAttribute="centerX" secondItem="zOC-rJ-W22" secondAttribute="centerX" id="3d4-nd-CfW"/>
