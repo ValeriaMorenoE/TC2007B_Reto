@@ -15,5 +15,14 @@ class ViewController: UIViewController {
     }
 
 
+    @IBAction func showHome(_ sender: Any) {
+        
+        let homeStoryBoard = UIStoryboard(name: "Menu", bundle: nil)
+        let vc = homeStoryBoard.instantiateViewController(identifier: "MainMenuViewController") as! MenuViewController
+        
+        vc.modalPresentationStyle = .currentContext
+        self.present(vc, animated: true, completion: nil)
+    }
+    
 }
 

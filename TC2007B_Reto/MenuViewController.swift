@@ -2,32 +2,76 @@
 //  MenuViewController.swift
 //  TC2007B_Reto
 //
-//  Created by Alumno on 08/09/21.
+//  Created by Valeria Moreno on 08/09/21.
 //
 
 import UIKit
 
 class MenuViewController: UIViewController {
-
+    @IBOutlet weak var userTxtField: UILabel!
+    
+    @IBOutlet weak var exposicionesButton: UIButton!
+    @IBOutlet weak var reservacionesButton: UIButton!
+    @IBOutlet weak var boletosButton: UIButton!
+    @IBOutlet weak var museo3dButton: UIButton!
+    @IBOutlet weak var misComprasButton: UIButton!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        setupViews()
     }
     
-    @IBAction func showBuyTicket(_ sender: Any) {
-        let buyTicketView = TicketRestaurantController(nibName: "TicketRestaurantController", bundle: nil)
-        self.present(buyTicketView, animated: true, completion: nil)
+    func setupViews() {
+        exposicionesButton.layer.cornerRadius = 20
+        exposicionesButton.clipsToBounds = true
+        
+        reservacionesButton.layer.cornerRadius = 20
+        reservacionesButton.clipsToBounds = true
+        
+        boletosButton.layer.cornerRadius = 20
+        boletosButton.clipsToBounds = true
+        
+        museo3dButton.layer.cornerRadius = 20
+        museo3dButton.clipsToBounds = true
+        
+        misComprasButton.layer.cornerRadius = 20
+        misComprasButton.clipsToBounds = true
     }
     
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    @IBAction func exposicionesButtonPressed(_ sender: Any) {
+        // hacia exposiciones
+        /*
+        let exposicionesStoryboard = UIStoryboard(name: "Exposiciones", bundle: nil)
+        let vc = exposicionesStoryboard.instantiateViewController(identifier: "expoMenuViewController") as! expoMenuViewController
+        
+        vc.modalPresentationStyle = .currentContext
+        self.present(vc, animated: true, completion: nil)
+ */
     }
-    */
-
+    
+    @IBAction func reservacionesButtonPressed(_ sender: Any) {
+        // hacia reservaciones de restaurante
+        /*let reservacionesStoryboard = UIStoryboard(name: "Reservaciones", bundle: nil)
+        let vc = reservacionesStoryboard.instantiateViewController(identifier: "reservacionesViewController") as! reservacionesViewController
+        
+        vc.modalPresentationStyle = .currentContext
+        self.present(vc, animated: true, completion: nil)
+         */
+    }
+    @IBAction func boletosButtonPressed(_ sender: Any) {
+        // hacia compra de boletos
+    }
+    @IBAction func museo3dButtonPressed(_ sender: Any) {
+        // hacia museo 3D
+        let museo3dStoryboard = UIStoryboard(name: "Museo3d", bundle: nil)
+        let vc = museo3dStoryboard.instantiateViewController(identifier: "Museo3dViewController") as! Museo3dViewController
+        
+        vc.modalPresentationStyle = .currentContext
+        self.present(vc, animated: true, completion: nil)
+    }
+    @IBAction func misComprasButtonPressed(_ sender: Any) {
+        // hacia boletos y reservaciones comprados
+    }
+    
+    
 }
