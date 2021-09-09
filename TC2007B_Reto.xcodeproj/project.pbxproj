@@ -28,7 +28,8 @@
 		FBFC48BD26E8F28A000B7FAF /* expoViewCellTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBFC48BB26E8F28A000B7FAF /* expoViewCellTableViewCell.swift */; };
 		FBFC48BE26E8F28A000B7FAF /* expoViewCellTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FBFC48BC26E8F28A000B7FAF /* expoViewCellTableViewCell.xib */; };
 		FBFC48C126E8F655000B7FAF /* expoMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBFC48BF26E8F655000B7FAF /* expoMenuViewController.swift */; };
-		FBFC48C226E8F655000B7FAF /* expoMenuViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef =
+		FBFC48C226E8F655000B7FAF /* expoMenuViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FBFC48C026E8F655000B7FAF /* expoMenuViewController.xib */; };
+
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -77,6 +78,7 @@
 		FBFC48BC26E8F28A000B7FAF /* expoViewCellTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = expoViewCellTableViewCell.xib; sourceTree = "<group>"; };
 		FBFC48BF26E8F655000B7FAF /* expoMenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = expoMenuViewController.swift; sourceTree = "<group>"; };
 		FBFC48C026E8F655000B7FAF /* expoMenuViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = expoMenuViewController.xib; sourceTree = "<group>"; };
+
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -285,13 +287,15 @@
 				00A02AD126E90CED004E25EA /* Museo3d.storyboard in Resources */,
 				2F9B1D6126E8E6BD00C75E83 /* SignUpVC.xib in Resources */,
 				00F19A6C26D5EE6D006762A7 /* LaunchScreen.storyboard in Resources */,
+
 				FB6C972D26E9018400DE96B4 /* TicketRestaurantController.xib in Resources */,
+
 				FBFC48BE26E8F28A000B7FAF /* expoViewCellTableViewCell.xib in Resources */,
 				FBFC48C226E8F655000B7FAF /* expoMenuViewController.xib in Resources */,
-				FBFC48BE26E8F28A000B7FAF /* expoViewCellTableViewCell.xib in Resources */,
-				FBFC48C226E8F655000B7FAF /* expoMenuViewController.xib in Resources */,
+
 				00F19A6926D5EE6D006762A7 /* Assets.xcassets in Resources */,
 				00F19A6726D5EE65006762A7 /* Main.storyboard in Resources */,
+				FBE9414E26EA3D7F0038C0B1 /* RestaurantViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -316,8 +320,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FB6C972C26E9018400DE96B4 /* TicketRestaurantController.swift in Sources */,
+				FBE9414D26EA3D7F0038C0B1 /* RestaurantViewController.swift in Sources */,
 				2F9B1D6026E8E6BD00C75E83 /* SignUpVC.swift in Sources */,
+
 				00A02ABD26E8F585004E25EA /* MenuViewController.swift in Sources */,
+
 				00F19A6426D5EE65006762A7 /* ViewController.swift in Sources */,
 				FBFC48BD26E8F28A000B7FAF /* expoViewCellTableViewCell.swift in Sources */,
 				FBFC48C126E8F655000B7FAF /* expoMenuViewController.swift in Sources */,
