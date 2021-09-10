@@ -13,6 +13,9 @@ class expoMenuViewController: UIViewController, UITableViewDelegate, UITableView
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        tableView.delegate = self
+        tableView.dataSource = self
 
         let nib = UINib(nibName: "expoViewCellTableViewCell", bundle: nil)
         tableView.register(nib, forCellReuseIdentifier: "expoCell")
@@ -28,12 +31,28 @@ class expoMenuViewController: UIViewController, UITableViewDelegate, UITableView
         
         let cell = tableView.dequeueReusableCell(withIdentifier: "expoCell") as! expoViewCellTableViewCell
         
-        cell.expoThumbnail.image = UIImage(named: "thumbnail1")
-        cell.expoName.text = "La Poética del Regreso"
-        cell.expoDates.text = "12 de Marzo 2021"
-        
+        if indexPath.row == 0 {
+            cell.expoThumbnail.image = UIImage(named: "thumbnail1")
+            cell.expoName.text = "Index Marco"
+            cell.expoDates.text = "12 de Junio 2021"
+        } else {
+            cell.expoThumbnail.image = UIImage(named: "thumbnail2")
+            cell.expoName.text = "La Poética del Regreso"
+            cell.expoDates.text = "12 de Marzo 2021"
+        }
         
         return cell
+    }
+    
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 200
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let VC = expoVC(nibName: "expoVC", bundle: nil)
+        
+        present(VC, animated: true, completion: nil)
+        
     }
 
 
