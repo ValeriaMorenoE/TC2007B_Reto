@@ -139,28 +139,13 @@
 		00F19A5E26D5EE65006762A7 /* TC2007B_Reto */ = {
 			isa = PBXGroup;
 			children = (
-				FBFC48C326E8F662000B7FAF /* expocisiones */,
 				00F19A5F26D5EE65006762A7 /* AppDelegate.swift */,
 				00F19A6126D5EE65006762A7 /* SceneDelegate.swift */,
-				00F19A6326D5EE65006762A7 /* ViewController.swift */,
-				00F19A6526D5EE65006762A7 /* Main.storyboard */,
+				2F586A2C26EC188C00CE551E /* Model */,
+				2F586A2A26EC181F00CE551E /* View */,
+				2F586A2B26EC184100CE551E /* Controller */,
 				00F19A6826D5EE6D006762A7 /* Assets.xcassets */,
-				00F19A6A26D5EE6D006762A7 /* LaunchScreen.storyboard */,
 				00F19A6D26D5EE6D006762A7 /* Info.plist */,
-				2F9B1D5E26E8E6BD00C75E83 /* SignUpVC.swift */,
-				2F9B1D5F26E8E6BD00C75E83 /* SignUpVC.xib */,
-				FB6C972A26E9018400DE96B4 /* TicketRestaurantController.swift */,
-				FB6C972B26E9018400DE96B4 /* TicketRestaurantController.xib */,
-				FBE9414B26EA3D7F0038C0B1 /* RestaurantViewController.swift */,
-				FBE9414C26EA3D7F0038C0B1 /* RestaurantViewController.xib */,
-				00A02AAC26E8EF9E004E25EA /* Menu.storyboard */,
-				00A02ABC26E8F585004E25EA /* MenuViewController.swift */,
-				00A02AD026E90CED004E25EA /* Museo3d.storyboard */,
-				00A02AD526E90EB4004E25EA /* Museo3dViewController.swift */,
-				00A02B1226EA55F0004E25EA /* HistorialViewController.swift */,
-				00A02B1326EA55F0004E25EA /* HistorialViewController.xib */,
-				00A02B1926EA56CE004E25EA /* HistorialTableViewCell.swift */,
-				00A02B1A26EA56CE004E25EA /* HistorialTableViewCell.xib */,
 			);
 			path = TC2007B_Reto;
 			sourceTree = "<group>";
@@ -183,17 +168,48 @@
 			path = TC2007B_RetoUITests;
 			sourceTree = "<group>";
 		};
-		FBFC48C326E8F662000B7FAF /* expocisiones */ = {
+		2F586A2A26EC181F00CE551E /* View */ = {
 			isa = PBXGroup;
 			children = (
-				FBFC48BB26E8F28A000B7FAF /* expoViewCellTableViewCell.swift */,
 				FBFC48BC26E8F28A000B7FAF /* expoViewCellTableViewCell.xib */,
-				FBFC48BF26E8F655000B7FAF /* expoMenuViewController.swift */,
 				FBFC48C026E8F655000B7FAF /* expoMenuViewController.xib */,
-				F360304A26EACCBA00B7177D /* expoVC.swift */,
 				F360304B26EACCBA00B7177D /* expoVC.xib */,
+				00F19A6526D5EE65006762A7 /* Main.storyboard */,
+				00F19A6A26D5EE6D006762A7 /* LaunchScreen.storyboard */,
+				2F9B1D5F26E8E6BD00C75E83 /* SignUpVC.xib */,
+				FB6C972B26E9018400DE96B4 /* TicketRestaurantController.xib */,
+				FBE9414C26EA3D7F0038C0B1 /* RestaurantViewController.xib */,
+				00A02AAC26E8EF9E004E25EA /* Menu.storyboard */,
+				00A02AD026E90CED004E25EA /* Museo3d.storyboard */,
+				00A02B1326EA55F0004E25EA /* HistorialViewController.xib */,
+				00A02B1A26EA56CE004E25EA /* HistorialTableViewCell.xib */,
 			);
-			path = expocisiones;
+			path = View;
+			sourceTree = "<group>";
+		};
+		2F586A2B26EC184100CE551E /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				00F19A6326D5EE65006762A7 /* ViewController.swift */,
+				FBFC48BB26E8F28A000B7FAF /* expoViewCellTableViewCell.swift */,
+				FBFC48BF26E8F655000B7FAF /* expoMenuViewController.swift */,
+				F360304A26EACCBA00B7177D /* expoVC.swift */,
+				2F9B1D5E26E8E6BD00C75E83 /* SignUpVC.swift */,
+				FB6C972A26E9018400DE96B4 /* TicketRestaurantController.swift */,
+				FBE9414B26EA3D7F0038C0B1 /* RestaurantViewController.swift */,
+				00A02ABC26E8F585004E25EA /* MenuViewController.swift */,
+				00A02AD526E90EB4004E25EA /* Museo3dViewController.swift */,
+				00A02B1226EA55F0004E25EA /* HistorialViewController.swift */,
+				00A02B1926EA56CE004E25EA /* HistorialTableViewCell.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		2F586A2C26EC188C00CE551E /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -525,6 +541,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = TC2007B_Reto/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -543,6 +560,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = TC2007B_Reto/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
