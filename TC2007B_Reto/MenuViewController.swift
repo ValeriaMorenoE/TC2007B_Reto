@@ -57,7 +57,7 @@ class MenuViewController: UIViewController {
         let museo3dStoryboard = UIStoryboard(name: "Museo3d", bundle: nil)
         let vc = museo3dStoryboard.instantiateViewController(identifier: "Museo3dViewController") as! Museo3dViewController
         
-        vc.modalPresentationStyle = .currentContext
+        //vc.modalPresentationStyle = .currentContext
         self.present(vc, animated: true, completion: nil)
     }
     @IBAction func misComprasButtonPressed(_ sender: Any) {
