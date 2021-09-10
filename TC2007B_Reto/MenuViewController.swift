@@ -62,6 +62,8 @@ class MenuViewController: UIViewController {
     }
     @IBAction func misComprasButtonPressed(_ sender: Any) {
         // hacia boletos y reservaciones comprados
+        let historial = HistorialViewController(nibName: "HistorialViewController", bundle: nil)
+        self.present(historial, animated: true, completion: nil)
     }
     
     
