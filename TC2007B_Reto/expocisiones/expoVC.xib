@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="expoVC" customModule="TC2007B_Reto" customModuleProvider="target">
+            <connections>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cy4-Sb-alf">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                    <subviews>
+                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="YPx-Dl-xbo">
+                            <rect key="frame" x="0.0" y="0.0" width="414" height="1150"/>
+                            <subviews>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Jyw-Wd-cHC">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="350"/>
+                                    <subviews>
+                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="thumbnail1" translatesAutoresizingMaskIntoConstraints="NO" id="Nkn-Ru-PoM">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="220"/>
+                                        </imageView>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="16 de octubre 2020 a agosto 2021" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JPg-BG-bVd">
+                                            <rect key="frame" x="0.0" y="295" width="414" height="40"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="40" id="sIP-XQ-4Gm"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="INDEX MARCO - FF projects" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lw5-iL-paq">
+                                            <rect key="frame" x="0.0" y="225" width="414" height="60"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="60" id="rdu-jv-Gnh"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <color key="backgroundColor" systemColor="systemYellowColor"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="350" id="1UC-sU-uI7"/>
+                                        <constraint firstItem="Nkn-Ru-PoM" firstAttribute="leading" secondItem="Jyw-Wd-cHC" secondAttribute="leading" id="2DK-AK-OSS"/>
+                                        <constraint firstAttribute="trailing" secondItem="Nkn-Ru-PoM" secondAttribute="trailing" id="2za-7X-26z"/>
+                                        <constraint firstItem="lw5-iL-paq" firstAttribute="leading" secondItem="JPg-BG-bVd" secondAttribute="leading" id="6VZ-kQ-tXz"/>
+                                        <constraint firstItem="JPg-BG-bVd" firstAttribute="leading" secondItem="Jyw-Wd-cHC" secondAttribute="leading" id="F3b-X1-AKe"/>
+                                        <constraint firstItem="lw5-iL-paq" firstAttribute="top" secondItem="Nkn-Ru-PoM" secondAttribute="bottom" constant="5" id="J7A-GI-igz"/>
+                                        <constraint firstItem="JPg-BG-bVd" firstAttribute="top" secondItem="lw5-iL-paq" secondAttribute="bottom" constant="10" id="KVd-mU-yTP"/>
+                                        <constraint firstItem="Nkn-Ru-PoM" firstAttribute="top" secondItem="Jyw-Wd-cHC" secondAttribute="top" id="ORI-0g-T2f"/>
+                                        <constraint firstAttribute="bottom" secondItem="JPg-BG-bVd" secondAttribute="bottom" constant="15" id="X4a-7l-urn"/>
+                                        <constraint firstAttribute="trailing" secondItem="lw5-iL-paq" secondAttribute="trailing" id="fP6-dX-SIf"/>
+                                        <constraint firstAttribute="trailing" secondItem="JPg-BG-bVd" secondAttribute="trailing" id="hvd-iB-WvZ"/>
+                                        <constraint firstItem="lw5-iL-paq" firstAttribute="leading" secondItem="Jyw-Wd-cHC" secondAttribute="leading" id="iRt-uk-BlK"/>
+                                        <constraint firstItem="lw5-iL-paq" firstAttribute="centerX" secondItem="Nkn-Ru-PoM" secondAttribute="centerX" id="leW-iy-98S"/>
+                                    </constraints>
+                                </view>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UQX-YQ-6Pq">
+                                    <rect key="frame" x="0.0" y="350" width="414" height="400"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="01M-1L-qG2">
+                                            <rect key="frame" x="5" y="15" width="404" height="223.5"/>
+                                            <string key="text">A raíz de la fuerte crisis económica que enfrentan los museos a nivel internacional, y derivado de la necesidad de buscar nuevos posicionamientos de las producciones artísticas actuales, MARCO pensó en el patio de las esculturas como una posibilidad de generar nexos con la comunidad artística de Monterrey que se ha preocupado por buscar un lugar en el espacio institucional global. Por tal motivo, su directora Taiyana Pimentel en colaboración con los Miembros del Consejo Directivo, pensaron en este proyecto.</string>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="exposicion2_1" translatesAutoresizingMaskIntoConstraints="NO" id="uJA-P4-hMw">
+                                            <rect key="frame" x="7" y="263.5" width="178" height="128"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="178" id="4Qf-Ks-uMz"/>
+                                                <constraint firstAttribute="height" constant="128" id="Td9-gC-0Xj"/>
+                                            </constraints>
+                                        </imageView>
+                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="exposicion2_2" translatesAutoresizingMaskIntoConstraints="NO" id="nfG-aa-BI6">
+                                            <rect key="frame" x="229" y="263.5" width="178" height="128"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="178" id="Ld5-mm-ILj"/>
+                                                <constraint firstAttribute="height" constant="128" id="lkx-zj-QNZ"/>
+                                            </constraints>
+                                        </imageView>
+                                    </subviews>
+                                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                    <constraints>
+                                        <constraint firstItem="nfG-aa-BI6" firstAttribute="top" secondItem="01M-1L-qG2" secondAttribute="bottom" constant="25" id="7bG-sp-KUe"/>
+                                        <constraint firstItem="uJA-P4-hMw" firstAttribute="leading" secondItem="UQX-YQ-6Pq" secondAttribute="leading" constant="7" id="Bps-VB-E0D"/>
+                                        <constraint firstItem="01M-1L-qG2" firstAttribute="leading" secondItem="UQX-YQ-6Pq" secondAttribute="leading" constant="5" id="Pk7-OM-2AQ"/>
+                                        <constraint firstItem="01M-1L-qG2" firstAttribute="top" secondItem="UQX-YQ-6Pq" secondAttribute="top" constant="15" id="YPn-qU-dOL"/>
+                                        <constraint firstItem="uJA-P4-hMw" firstAttribute="top" secondItem="01M-1L-qG2" secondAttribute="bottom" constant="25" id="deM-JQ-2vh"/>
+                                        <constraint firstAttribute="height" constant="400" id="kOq-Lj-Tud"/>
+                                        <constraint firstAttribute="trailing" secondItem="01M-1L-qG2" secondAttribute="trailing" constant="5" id="lC0-lU-bSB"/>
+                                        <constraint firstAttribute="trailing" secondItem="nfG-aa-BI6" secondAttribute="trailing" constant="7" id="oEU-Ae-MEq"/>
+                                    </constraints>
+                                </view>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="f57-lS-Luv">
+                                    <rect key="frame" x="0.0" y="750" width="414" height="400"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qjG-Ef-UP6">
+                                            <rect key="frame" x="5" y="15" width="404" height="143"/>
+                                            <string key="text">El subtexto de la exposición es relevante al momento que estamos todos viviendo e incita a reflexionar sobre las maneras en las cuales los eventos de actualidad informan el trabajo creativo de artistas reconocidos mundialmente.
+
+</string>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="exposicion2_3" translatesAutoresizingMaskIntoConstraints="NO" id="WD8-Wl-t5l">
+                                            <rect key="frame" x="58" y="165" width="298" height="180"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="180" id="B9b-pO-sFR"/>
+                                            </constraints>
+                                        </imageView>
+                                    </subviews>
+                                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                    <constraints>
+                                        <constraint firstItem="qjG-Ef-UP6" firstAttribute="leading" secondItem="f57-lS-Luv" secondAttribute="leading" constant="5" id="Ru9-eY-I19"/>
+                                        <constraint firstAttribute="trailing" secondItem="qjG-Ef-UP6" secondAttribute="trailing" constant="5" id="T5P-x3-HLz"/>
+                                        <constraint firstAttribute="trailing" secondItem="WD8-Wl-t5l" secondAttribute="trailing" constant="58" id="e6e-5T-Om1"/>
+                                        <constraint firstItem="WD8-Wl-t5l" firstAttribute="top" secondItem="qjG-Ef-UP6" secondAttribute="bottom" constant="7" id="fI7-eE-ReQ"/>
+                                        <constraint firstItem="qjG-Ef-UP6" firstAttribute="top" secondItem="f57-lS-Luv" secondAttribute="top" constant="15" id="jiv-a2-Ows"/>
+                                        <constraint firstItem="WD8-Wl-t5l" firstAttribute="leading" secondItem="f57-lS-Luv" secondAttribute="leading" constant="58" id="kQW-cF-rdv"/>
+                                        <constraint firstAttribute="height" constant="400" id="yxg-uk-xQo"/>
+                                        <constraint firstAttribute="bottom" secondItem="WD8-Wl-t5l" secondAttribute="bottom" constant="55" id="zQI-bZ-fKz"/>
+                                    </constraints>
+                                </view>
+                            </subviews>
+                        </stackView>
+                    </subviews>
+                    <constraints>
+                        <constraint firstItem="YPx-Dl-xbo" firstAttribute="leading" secondItem="EZj-Sz-Y8r" secondAttribute="leading" id="7cV-JL-TLr"/>
+                        <constraint firstItem="YPx-Dl-xbo" firstAttribute="bottom" secondItem="EZj-Sz-Y8r" secondAttribute="bottom" id="NtT-Tw-WgT"/>
+                        <constraint firstItem="YPx-Dl-xbo" firstAttribute="top" secondItem="EZj-Sz-Y8r" secondAttribute="top" id="cAR-Um-HhG"/>
+                        <constraint firstItem="YPx-Dl-xbo" firstAttribute="trailing" secondItem="EZj-Sz-Y8r" secondAttribute="trailing" id="eW1-3G-E28"/>
+                        <constraint firstItem="YPx-Dl-xbo" firstAttribute="width" secondItem="9Rb-NN-seF" secondAttribute="width" id="txn-g0-8WP"/>
+                    </constraints>
+                    <viewLayoutGuide key="contentLayoutGuide" id="EZj-Sz-Y8r"/>
+                    <viewLayoutGuide key="frameLayoutGuide" id="9Rb-NN-seF"/>
+                </scrollView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="cy4-Sb-alf" secondAttribute="bottom" id="Bra-xm-CxJ"/>
+                <constraint firstItem="cy4-Sb-alf" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="bIX-6w-n6R"/>
+                <constraint firstItem="cy4-Sb-alf" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="nXC-WY-Gwc"/>
+                <constraint firstItem="cy4-Sb-alf" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="u0Y-yt-BSK"/>
+            </constraints>
+            <point key="canvasLocation" x="140.57971014492756" y="97.767857142857139"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="exposicion2_1" width="600" height="400"/>
+        <image name="exposicion2_2" width="600" height="400"/>
+        <image name="exposicion2_3" width="600" height="400"/>
+        <image name="thumbnail1" width="1200" height="800"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemYellowColor">
+            <color red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
