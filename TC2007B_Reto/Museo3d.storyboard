@@ -28,6 +28,15 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4tO-rs-axZ">
+                                <rect key="frame" x="20" y="44" width="13" height="22"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" image="chevron.backward" catalog="system"/>
+                                <connections>
+                                    <action selector="goBack:" destination="xf8-gy-s7h" eventType="touchUpInside" id="wDq-42-PVW"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="Gvh-dF-zXO"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -42,6 +51,9 @@
                             <constraint firstItem="Gvh-dF-zXO" firstAttribute="trailing" secondItem="IMi-kn-IQH" secondAttribute="trailing" constant="91" id="soR-T1-JLW"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="menuButton" destination="4tO-rs-axZ" id="Swk-6a-ieN"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="KH8-44-Xnv" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -49,6 +61,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="chevron.backward" catalog="system" width="96" height="128"/>
         <image name="circle_reg" width="1080" height="832"/>
         <image name="logo_marco_txt" width="288" height="53"/>
         <systemColor name="systemBackgroundColor">
