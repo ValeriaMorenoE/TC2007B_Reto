@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import Firebase
 
 class MenuViewController: UIViewController {
     @IBOutlet weak var userTxtField: UILabel!
@@ -14,11 +15,14 @@ class MenuViewController: UIViewController {
     @IBOutlet weak var reservacionesButton: UIButton!
     @IBOutlet weak var boletosButton: UIButton!
     @IBOutlet weak var museo3dButton: UIButton!
+    @IBOutlet weak var welcomeLbl: UILabel!
     @IBOutlet weak var misComprasButton: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         setupViews()
+        guard let email = Auth.auth().currentUser?.displayName else { return }
+        welcomeLbl.text = "Bienvenido \(email)"
     }
     
     func setupViews() {
@@ -64,6 +68,11 @@ class MenuViewController: UIViewController {
         // hacia boletos y reservaciones comprados
         let historial = HistorialViewController(nibName: "HistorialViewController", bundle: nil)
         self.present(historial, animated: true, completion: nil)
+    }
+    @IBAction func logOutButtonPressed(_ sender: Any) {
+        do {
+            try? Auth.auth().signOut()
+        }
     }
     
     
