@@ -9,6 +9,13 @@ import UIKit
 
 class SignUpVC: UIViewController {
 
+    @IBOutlet weak var nameField: UITextField!
+    @IBOutlet weak var userField: UITextField!
+    @IBOutlet weak var passField: UITextField!
+    @IBOutlet weak var confpassField: UITextField!
+    @IBOutlet weak var createBtn: UIButton!
+    @IBOutlet weak var loginBtn: UIButton!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
