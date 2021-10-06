@@ -7,6 +7,7 @@ target 'TC2007B_Reto' do
 
   # Pods for TC2007B_Reto
     pod 'Firebase/Auth'
+    pod 'FSCalendar'
 
   target 'TC2007B_RetoTests' do
     inherit! :search_paths
