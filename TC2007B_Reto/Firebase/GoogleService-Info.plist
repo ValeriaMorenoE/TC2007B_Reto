@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>30536728878-p4s2bl3hv34onkm4gfse2u8k8c0jt11i.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.30536728878-p4s2bl3hv34onkm4gfse2u8k8c0jt11i</string>
+	<key>API_KEY</key>
+	<string>AIzaSyCuTXyIGlbQQXSrLZmQSUbVbl4zJSGyQ-A</string>
+	<key>GCM_SENDER_ID</key>
+	<string>30536728878</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>mx.tec.equipo4.TC2007B-Reto</string>
+	<key>PROJECT_ID</key>
+	<string>museo-marco-tc2007b</string>
+	<key>STORAGE_BUCKET</key>
+	<string>museo-marco-tc2007b.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:30536728878:ios:433cff1eb0a6e5bef8fabf</string>
+</dict>
+</plist>
