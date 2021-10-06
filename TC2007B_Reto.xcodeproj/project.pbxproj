@@ -34,6 +34,8 @@
 		F360304D26EACCBA00B7177D /* expoVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = F360304B26EACCBA00B7177D /* expoVC.xib */; };
 		FB6C972C26E9018400DE96B4 /* TicketRestaurantController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB6C972A26E9018400DE96B4 /* TicketRestaurantController.swift */; };
 		FB6C972D26E9018400DE96B4 /* TicketRestaurantController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FB6C972B26E9018400DE96B4 /* TicketRestaurantController.xib */; };
+		FBC6A253270DEA6600728CC1 /* Network.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBC6A252270DEA6600728CC1 /* Network.swift */; };
+		FBC6A255270DEB1300728CC1 /* exposicionesAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBC6A254270DEB1300728CC1 /* exposicionesAPI.swift */; };
 		FBE9414D26EA3D7F0038C0B1 /* RestaurantViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBE9414B26EA3D7F0038C0B1 /* RestaurantViewController.swift */; };
 		FBE9414E26EA3D7F0038C0B1 /* RestaurantViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FBE9414C26EA3D7F0038C0B1 /* RestaurantViewController.xib */; };
 		FBFC48BD26E8F28A000B7FAF /* expoViewCellTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBFC48BB26E8F28A000B7FAF /* expoViewCellTableViewCell.swift */; };
@@ -99,6 +101,8 @@
 		F7881BC51AD747CE6EFE3BC1 /* Pods-TC2007B_Reto.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TC2007B_Reto.debug.xcconfig"; path = "Target Support Files/Pods-TC2007B_Reto/Pods-TC2007B_Reto.debug.xcconfig"; sourceTree = "<group>"; };
 		FB6C972A26E9018400DE96B4 /* TicketRestaurantController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TicketRestaurantController.swift; sourceTree = "<group>"; };
 		FB6C972B26E9018400DE96B4 /* TicketRestaurantController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TicketRestaurantController.xib; sourceTree = "<group>"; };
+		FBC6A252270DEA6600728CC1 /* Network.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Network.swift; sourceTree = "<group>"; };
+		FBC6A254270DEB1300728CC1 /* exposicionesAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = exposicionesAPI.swift; sourceTree = "<group>"; };
 		FBE9414B26EA3D7F0038C0B1 /* RestaurantViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantViewController.swift; sourceTree = "<group>"; };
 		FBE9414C26EA3D7F0038C0B1 /* RestaurantViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RestaurantViewController.xib; sourceTree = "<group>"; };
 		FBFC48BB26E8F28A000B7FAF /* expoViewCellTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = expoViewCellTableViewCell.swift; sourceTree = "<group>"; };
@@ -231,6 +235,8 @@
 		2F586A2C26EC188C00CE551E /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				FBC6A252270DEA6600728CC1 /* Network.swift */,
+				FBC6A254270DEB1300728CC1 /* exposicionesAPI.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -518,8 +524,10 @@
 				FB6C972C26E9018400DE96B4 /* TicketRestaurantController.swift in Sources */,
 				00A02B1B26EA56CE004E25EA /* HistorialTableViewCell.swift in Sources */,
 				FBE9414D26EA3D7F0038C0B1 /* RestaurantViewController.swift in Sources */,
+				FBC6A255270DEB1300728CC1 /* exposicionesAPI.swift in Sources */,
 				2F9B1D6026E8E6BD00C75E83 /* SignUpVC.swift in Sources */,
 				00A02ABD26E8F585004E25EA /* MenuViewController.swift in Sources */,
+				FBC6A253270DEA6600728CC1 /* Network.swift in Sources */,
 				00F19A6426D5EE65006762A7 /* ViewController.swift in Sources */,
 				FBFC48BD26E8F28A000B7FAF /* expoViewCellTableViewCell.swift in Sources */,
 				FBFC48C126E8F655000B7FAF /* expoMenuViewController.swift in Sources */,
