@@ -24,6 +24,8 @@ class expoMenuViewController: UIViewController, UITableViewDelegate, UITableView
         tableView.register(nib, forCellReuseIdentifier: "expoCell")
         
         // Do any additional setup after loading the view.
+        
+        fetchData()
     }
     
     func fetchData(){
@@ -35,6 +37,7 @@ class expoMenuViewController: UIViewController, UITableViewDelegate, UITableView
                 guard let expos = event else {return}
                 self.expos = expos
                 self.tableView.reloadData()
+                print("Got data")
             }
         }
     }
@@ -49,7 +52,7 @@ class expoMenuViewController: UIViewController, UITableViewDelegate, UITableView
         
         //cell.expoThumbnail.image = UIImage(named: "thumbnail1")
         cell.textLabel?.text = expos[indexPath.row].title
-        cell.detailTextLabel?.text = expos[indexPath.row].welcomeDescription
+        cell.detailTextLabel?.text = expos[indexPath.row].startDate
         
         return cell
     }
@@ -60,6 +63,7 @@ class expoMenuViewController: UIViewController, UITableViewDelegate, UITableView
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let VC = expoVC(nibName: "expoVC", bundle: nil)
+        VC.expo = expos[indexPath.row]
         
         present(VC, animated: true, completion: nil)
         

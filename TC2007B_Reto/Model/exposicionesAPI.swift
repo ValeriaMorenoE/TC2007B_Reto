@@ -9,7 +9,7 @@ import Foundation
 
 // MARK: - WelcomeElement
 struct Expo: Decodable {
-    let id, title, startDate, welcomeDescription: String
+    let id, title, startDate, description: String
     let cerraduria, museografia, salas, tecnica: String
     let obras: String?
     let recorridoVirtual, videoURL: String?
