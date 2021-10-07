@@ -18,6 +18,16 @@ class MenuViewController: UIViewController {
     @IBOutlet weak var welcomeLbl: UILabel!
     @IBOutlet weak var misComprasButton: UIButton!
     
+    override func viewWillDisappear(_ animated: Bool) {
+        self.navigationController?.setNavigationBarHidden(false, animated: animated);
+        super.viewWillDisappear(animated)
+    }
+
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        self.navigationController?.setNavigationBarHidden(true, animated: animated)
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         setupViews()
@@ -46,17 +56,16 @@ class MenuViewController: UIViewController {
     @IBAction func exposicionesButtonPressed(_ sender: Any) {
         let exposiciones = expoMenuViewController(nibName: "expoMenuViewController", bundle: nil)
         self.navigationController?.pushViewController(exposiciones, animated: true)
-        self.navigationController?.setNavigationBarHidden(false, animated: false)
     }
     
     @IBAction func reservacionesButtonPressed(_ sender: Any) {
         let reservar = RestaurantViewController(nibName: "RestaurantViewController", bundle: nil)
-        self.present(reservar, animated: true, completion: nil)
+        self.navigationController?.pushViewController(reservar, animated: true)
     }
     @IBAction func boletosButtonPressed(_ sender: Any) {
         // hacia compra de boletos
         let comprarBoletos = TicketRestaurantController(nibName: "TicketRestaurantController", bundle: nil)
-        self.present(comprarBoletos, animated: true, completion: nil)
+        self.navigationController?.pushViewController(comprarBoletos, animated: true)
     }
     @IBAction func museo3dButtonPressed(_ sender: Any) {
         // hacia museo 3D
@@ -64,12 +73,12 @@ class MenuViewController: UIViewController {
         let vc = museo3dStoryboard.instantiateViewController(identifier: "Museo3dViewController") as! Museo3dViewController
         
         //vc.modalPresentationStyle = .currentContext
-        self.present(vc, animated: true, completion: nil)
+        self.navigationController?.pushViewController(vc, animated: true)
     }
     @IBAction func misComprasButtonPressed(_ sender: Any) {
         // hacia boletos y reservaciones comprados
         let historial = HistorialViewController(nibName: "HistorialViewController", bundle: nil)
-        self.present(historial, animated: true, completion: nil)
+        self.navigationController?.pushViewController(historial, animated: true)
     }
     @IBAction func logOutButtonPressed(_ sender: Any) {
         do {
