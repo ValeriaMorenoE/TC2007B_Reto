@@ -19,10 +19,14 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             in
             if user != nil {
                 let storyboard = UIStoryboard(name: "Menu", bundle: nil)
-                storyboard.instantiateViewController(withIdentifier: "MainMenuViewController")
-                let vc = storyboard.instantiateViewController(withIdentifier: "MainMenuViewController")
+                //storyboard.instantiateViewController(withIdentifier: "MainMenuViewController")
+                let vc = storyboard.instantiateViewController(withIdentifier: "MenuNavigationController")
+
+                // Make it root or what ever you want here
                 UIApplication.shared.windows.first?.rootViewController = vc
                 UIApplication.shared.windows.first?.makeKeyAndVisible()
+                //UIApplication.shared.windows.first?.rootViewController = vc
+                //UIApplication.shared.windows.first?.makeKeyAndVisible()
             } else {
                 let storyboard = UIStoryboard(name: "Main", bundle: nil)
                 storyboard.instantiateViewController(withIdentifier: "ViewController")

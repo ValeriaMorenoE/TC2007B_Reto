@@ -23,6 +23,7 @@ class MenuViewController: UIViewController {
         setupViews()
         guard let email = Auth.auth().currentUser?.displayName else { return }
         welcomeLbl.text = "Bienvenido \(email)"
+        self.navigationController?.setNavigationBarHidden(true, animated: false)
     }
     
     func setupViews() {
@@ -44,7 +45,8 @@ class MenuViewController: UIViewController {
     
     @IBAction func exposicionesButtonPressed(_ sender: Any) {
         let exposiciones = expoMenuViewController(nibName: "expoMenuViewController", bundle: nil)
-        self.present(exposiciones, animated: true, completion: nil)
+        self.navigationController?.pushViewController(exposiciones, animated: true)
+        self.navigationController?.setNavigationBarHidden(false, animated: false)
     }
     
     @IBAction func reservacionesButtonPressed(_ sender: Any) {
