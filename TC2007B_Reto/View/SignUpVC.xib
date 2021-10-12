@@ -11,6 +11,12 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SignUpVC" customModule="TC2007B_Reto" customModuleProvider="target">
             <connections>
+                <outlet property="confpassField" destination="zOC-rJ-W22" id="Ia5-Sv-5QH"/>
+                <outlet property="createBtn" destination="t3D-W8-Nqs" id="r87-w8-BBT"/>
+                <outlet property="loginBtn" destination="8N3-wo-wGW" id="rBr-1N-Adg"/>
+                <outlet property="nameField" destination="GN7-7u-hjs" id="qgZ-xo-Sqx"/>
+                <outlet property="passField" destination="Uom-9R-2lQ" id="5rQ-zT-9rc"/>
+                <outlet property="userField" destination="ga7-Ut-Qg5" id="VTP-rY-jkg"/>
                 <outlet property="view" destination="MfH-fu-gAc" id="K7t-Pj-X5r"/>
             </connections>
         </placeholder>
