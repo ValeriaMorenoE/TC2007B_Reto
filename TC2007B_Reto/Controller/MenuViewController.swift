@@ -77,8 +77,10 @@ class MenuViewController: UIViewController {
     }
     @IBAction func misComprasButtonPressed(_ sender: Any) {
         // hacia boletos y reservaciones comprados
-        let historial = HistorialViewController(nibName: "HistorialViewController", bundle: nil)
-        self.navigationController?.pushViewController(historial, animated: true)
+        let historial = noticiasViewController(nibName: "noticiasViewController", bundle: nil)
+        historial.modalPresentationStyle = .fullScreen
+        //self.navigationController?.pushViewController(historial, animated: true)
+        self.present(historial, animated: true, completion: nil)
     }
     @IBAction func logOutButtonPressed(_ sender: Any) {
         do {

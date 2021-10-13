@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19162" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19144"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -42,7 +43,7 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="¿No tienes Cuenta? " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gRG-kx-lWd">
-                                <rect key="frame" x="80" y="811" width="153" height="21"/>
+                                <rect key="frame" x="80" y="816" width="153" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -106,7 +107,6 @@
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="G3g-WO-Jfu" secondAttribute="trailing" constant="50" id="3Kl-NP-ete"/>
                             <constraint firstItem="d7Y-dJ-QR5" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="100" id="53S-sC-r9m"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="i09-6O-hCS" secondAttribute="trailing" constant="50" id="5IZ-1A-kJR"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="XVt-2b-jzI" secondAttribute="bottom" constant="25" id="77K-MK-wcf"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="d7Y-dJ-QR5" secondAttribute="trailing" constant="100" id="7df-xa-3Bz"/>
                             <constraint firstItem="i09-6O-hCS" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="50" id="8Es-iF-NNI"/>
                             <constraint firstItem="b5F-0q-fAg" firstAttribute="top" secondItem="o2t-ye-guC" secondAttribute="bottom" constant="20" id="8VM-nJ-kPL"/>
@@ -130,7 +130,6 @@
                             <constraint firstItem="b5F-0q-fAg" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="50" id="qrL-TU-xtn"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="gRG-kx-lWd" secondAttribute="bottom" constant="25" id="tWK-aV-wh9"/>
                             <constraint firstItem="d7Y-dJ-QR5" firstAttribute="top" secondItem="F2O-ah-VFz" secondAttribute="bottom" constant="5" id="tnd-Ck-Wqd"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="gRG-kx-lWd" secondAttribute="bottom" constant="30" id="uxZ-dW-n19"/>
                             <constraint firstItem="G3g-WO-Jfu" firstAttribute="top" secondItem="b5F-0q-fAg" secondAttribute="bottom" constant="20" id="v30-98-fun"/>
                             <constraint firstItem="N2q-IR-Csb" firstAttribute="top" secondItem="d7Y-dJ-QR5" secondAttribute="bottom" constant="100" id="x4g-ns-aTr"/>
                         </constraints>
@@ -144,7 +143,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="95.652173913043484" y="79.6875"/>
+            <point key="canvasLocation" x="-670" y="79"/>
         </scene>
     </scenes>
     <resources>
