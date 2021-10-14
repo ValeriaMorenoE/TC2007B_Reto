@@ -37,7 +37,7 @@ class expoMenuViewController: UIViewController, UITableViewDelegate, UITableView
                 guard let expos = event else {return}
                 self.expos = expos
                 self.tableView.reloadData()
-                print("Got data")
+                //print("Got data")
             }
         }
     }

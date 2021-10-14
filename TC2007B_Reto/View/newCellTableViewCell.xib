@@ -1,9 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19162" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19144"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -24,13 +23,13 @@
                         </constraints>
                     </imageView>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6fl-9d-Jl8">
-                        <rect key="frame" x="7" y="169" width="207" height="14"/>
+                        <rect key="frame" x="7" y="169" width="215.5" height="14"/>
                         <attributedString key="attributedText">
                             <fragment content="“Lo que se desborda” de Ismael Merla">
                                 <attributes>
                                     <color key="NSBackgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     <color key="NSColor" red="0.33582773799999999" green="0.39463829989999999" blue="0.55778110030000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                    <font key="NSFont" size="12" name="SFPro-Medium"/>
+                                    <font key="NSFont" metaFont="cellTitle"/>
                                     <real key="NSKern" value="0.0"/>
                                     <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" defaultTabInterval="36" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
                                         <tabStops/>
@@ -44,7 +43,7 @@ Cg
 </string>
                                 <attributes>
                                     <color key="NSColor" red="0.33582773799999999" green="0.39463829989999999" blue="0.55778110030000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                    <font key="NSFont" size="12" name="SFPro-Medium"/>
+                                    <font key="NSFont" metaFont="cellTitle"/>
                                     <real key="NSKern" value="0.0"/>
                                     <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" defaultTabInterval="36" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
                                         <tabStops/>
@@ -88,14 +87,14 @@ Cg
                         <nil key="highlightedColor"/>
                     </label>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qUD-qt-pnN">
-                        <rect key="frame" x="7" y="191" width="66" height="14"/>
+                        <rect key="frame" x="7" y="191" width="68" height="14"/>
                         <attributedString key="attributedText">
                             <fragment>
                                 <string key="content">JUNIO 2021 
 </string>
                                 <attributes>
                                     <color key="NSColor" red="0.1687981784" green="0.2429438531" blue="0.44459456209999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                    <font key="NSFont" size="12" name="SFPro-Thin"/>
+                                    <font key="NSFont" metaFont="cellTitle"/>
                                     <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                 </attributes>
                             </fragment>
@@ -103,12 +102,12 @@ Cg
                         <nil key="highlightedColor"/>
                     </label>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lhN-wx-Bxe">
-                        <rect key="frame" x="7" y="144" width="179" height="17"/>
+                        <rect key="frame" x="7" y="144" width="180" height="17"/>
                         <attributedString key="attributedText">
                             <fragment content="INTERVENCIÓN ARTÍSITICA">
                                 <attributes>
                                     <color key="NSColor" red="0.3358841836" green="0.39847052100000002" blue="0.55768066640000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                    <font key="NSFont" size="14" name="SFPro-Bold"/>
+                                    <font key="NSFont" metaFont="system" size="14"/>
                                     <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                 </attributes>
                             </fragment>
@@ -131,6 +130,13 @@ Cg
                 </constraints>
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="dateCell" destination="qUD-qt-pnN" id="UyW-zm-Kxa"/>
+                <outlet property="descriptionCell" destination="R6X-5u-GNt" id="lFf-jr-k1C"/>
+                <outlet property="image" destination="CfQ-8F-0Zs" id="ZTc-G8-iGD"/>
+                <outlet property="subtitleCell" destination="6fl-9d-Jl8" id="I27-J4-R4W"/>
+                <outlet property="titleCell" destination="lhN-wx-Bxe" id="HCS-HJ-BGF"/>
+            </connections>
             <point key="canvasLocation" x="122.46376811594205" y="139.95535714285714"/>
         </tableViewCell>
     </objects>
