@@ -139,9 +139,6 @@
                             <constraint firstItem="B3P-D9-pxn" firstAttribute="top" secondItem="4dv-Ll-udF" secondAttribute="bottom" constant="50" id="u3l-lK-vkE"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="ccj-6S-N53">
-                        <barButtonItem key="backBarButtonItem" title="Menu" id="AgT-VS-jOo"/>
-                    </navigationItem>
                     <connections>
                         <outlet property="boletosButton" destination="s0d-cI-7b4" id="jtt-Bg-ktQ"/>
                         <outlet property="exposicionesButton" destination="q6s-d0-Ooj" id="Hya-FD-YdV"/>
@@ -154,26 +151,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mxT-cw-NM1" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="994.20289855072474" y="-211.60714285714286"/>
-        </scene>
-        <!--Navigation Controller-->
-        <scene sceneID="vYf-ti-uEf">
-            <objects>
-                <navigationController storyboardIdentifier="MenuNavigationController" automaticallyAdjustsScrollViewInsets="NO" navigationBarHidden="YES" id="gBa-zs-kCS" sceneMemberID="viewController">
-                    <toolbarItems/>
-                    <navigationBar key="navigationBar" opaque="NO" alpha="0.0" contentMode="scaleToFill" id="xco-1m-gFS">
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                    <nil name="viewControllers"/>
-                    <toolbar key="toolbar" opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="lrZ-25-8uN">
-                        <autoresizingMask key="autoresizingMask"/>
-                    </toolbar>
-                    <connections>
-                        <segue destination="azw-Q1-gvX" kind="relationship" relationship="rootViewController" id="Dzy-Yu-Ppk"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="39s-40-1Iv" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="84.057971014492765" y="-211.60714285714286"/>
         </scene>
     </scenes>
     <resources>
