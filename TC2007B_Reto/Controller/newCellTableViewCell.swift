@@ -1,15 +1,14 @@
 //
-//  HistorialTableViewCell.swift
+//  newCellTableViewCell.swift
 //  TC2007B_Reto
 //
-//  Created by Valeria Moreno on 09/09/21.
+//  Created by Ruben Robles on 10/13/21.
 //
 
 import UIKit
 
-class HistorialTableViewCell: UITableViewCell {
-    @IBOutlet weak var ticketImage: UIImageView!
-    
+class newCellTableViewCell: UITableViewCell {
+
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
