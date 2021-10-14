@@ -49,6 +49,8 @@ class ViewController: UIViewController {
     
     @IBAction func showSignUp(_ sender: Any) {
         let signup = SignUpVC(nibName: "SignUpVC", bundle: nil)
+        signup.modalPresentationStyle = .fullScreen
+        signup.modalTransitionStyle = .crossDissolve
         self.present(signup, animated: true, completion: nil)
     }
     
