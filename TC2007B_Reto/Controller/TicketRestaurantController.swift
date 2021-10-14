@@ -47,19 +47,6 @@ class TicketRestaurantController: UIViewController {
         let numAdultosMayores = Int(cantAdultosMayores.text ?? "") ?? 0
         precio.text = "$" + String((numNiños+numAdultosMayores)*10+numAdultos*40)
     }
-    func post(){
-        NetworkManager.postData(fileLocation: "https://pacific-inlet-83178.herokuapp.com/reserve", method: .get, parameters: nil, stringParameters: nil) {
-            (event: [Expo]?, error) in
-            if error != nil{
-                print(error ?? "Error al hacer request")
-            } else {
-                guard let expos = event else {return}
-                self.expos = expos
-                self.tableView.reloadData()
-                print("Got data")
-            }
-        }
-    }
     /*
     // MARK: - Navigation
 
