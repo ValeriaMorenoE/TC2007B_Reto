@@ -101,8 +101,8 @@
                                 </constraints>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SZa-1v-VfW">
-                                <rect key="frame" x="10" y="44" width="46" height="30"/>
-                                <state key="normal" title="Button"/>
+                                <rect key="frame" x="10" y="44" width="92" height="30"/>
+                                <state key="normal" title="Vale haz esto"/>
                                 <connections>
                                     <action selector="logOutButtonPressed:" destination="azw-Q1-gvX" eventType="touchUpInside" id="GQW-Do-Eo0"/>
                                 </connections>

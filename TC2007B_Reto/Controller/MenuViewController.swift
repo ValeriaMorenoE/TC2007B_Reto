@@ -9,8 +9,8 @@ import UIKit
 import Firebase
 
 class MenuViewController: UIViewController {
-    @IBOutlet weak var userTxtField: UILabel!
     
+    @IBOutlet weak var userTxtField: UILabel!
     @IBOutlet weak var exposicionesButton: UIButton!
     @IBOutlet weak var reservacionesButton: UIButton!
     @IBOutlet weak var boletosButton: UIButton!
@@ -52,7 +52,7 @@ class MenuViewController: UIViewController {
         misComprasButton.layer.cornerRadius = 20
         misComprasButton.clipsToBounds = true
     }
-    
+
     @IBAction func exposicionesButtonPressed(_ sender: Any) {
         let exposiciones = expoMenuViewController(nibName: "expoMenuViewController", bundle: nil)
         self.navigationController?.pushViewController(exposiciones, animated: true)
@@ -78,7 +78,7 @@ class MenuViewController: UIViewController {
     @IBAction func misComprasButtonPressed(_ sender: Any) {
         // hacia boletos y reservaciones comprados
         let historial = noticiasViewController(nibName: "noticiasViewController", bundle: nil)
-        historial.modalPresentationStyle = .fullScreen
+        //historial.modalPresentationStyle = .fullScreen
         //self.navigationController?.pushViewController(historial, animated: true)
         self.present(historial, animated: true, completion: nil)
     }
