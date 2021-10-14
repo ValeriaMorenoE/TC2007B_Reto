@@ -6,10 +6,19 @@
 //
 
 import UIKit
+import WebKit
 
-class Museo3dViewController: UIViewController {
+class Museo3dViewController: UIViewController, WKNavigationDelegate {
     @IBOutlet weak var menuButton: UIButton!
+    @IBOutlet weak var webView: WKWebView!
     
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        webView.navigationDelegate = self
+        
+        let url = URL(string: "https://www.patiomarco.360s.mx")!
+        webView.load(URLRequest(url: url))
+    }
     @IBAction func goBack(_ sender: Any) {
         let homeStoryBoard = UIStoryboard(name: "Menu", bundle: nil)
         let vc = homeStoryBoard.instantiateViewController(identifier: "MainMenuViewController") as! MenuViewController

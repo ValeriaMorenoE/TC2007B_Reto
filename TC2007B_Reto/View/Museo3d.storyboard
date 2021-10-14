@@ -22,12 +22,6 @@
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo_marco_txt" translatesAutoresizingMaskIntoConstraints="NO" id="IMi-kn-IQH">
                                 <rect key="frame" x="91" y="90" width="232" height="53"/>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Aquí va el Museo 3D" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pjA-TK-L4b">
-                                <rect key="frame" x="129" y="437.5" width="156" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4tO-rs-axZ">
                                 <rect key="frame" x="20" y="44" width="13" height="22"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -37,22 +31,33 @@
                                     <action selector="goBack:" destination="xf8-gy-s7h" eventType="touchUpInside" id="wDq-42-PVW"/>
                                 </connections>
                             </button>
+                            <wkWebView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MSy-cd-OlS">
+                                <rect key="frame" x="91" y="285" width="232" height="326"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <wkWebViewConfiguration key="configuration">
+                                    <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
+                                    <wkPreferences key="preferences"/>
+                                </wkWebViewConfiguration>
+                            </wkWebView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="Gvh-dF-zXO"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="IMi-kn-IQH" firstAttribute="top" secondItem="Gvh-dF-zXO" secondAttribute="top" constant="46" id="9an-wK-4i1"/>
                             <constraint firstItem="jYz-UF-g3p" firstAttribute="top" secondItem="J03-L3-26R" secondAttribute="top" constant="-639" id="BK6-fv-Z5l"/>
+                            <constraint firstItem="MSy-cd-OlS" firstAttribute="centerY" secondItem="J03-L3-26R" secondAttribute="centerY" id="Coz-Or-9Gy"/>
                             <constraint firstItem="jYz-UF-g3p" firstAttribute="leading" secondItem="J03-L3-26R" secondAttribute="leading" constant="-333" id="DPj-jY-HQj"/>
                             <constraint firstItem="IMi-kn-IQH" firstAttribute="leading" secondItem="Gvh-dF-zXO" secondAttribute="leading" constant="91" id="Qb5-Tm-P8L"/>
                             <constraint firstAttribute="trailing" secondItem="jYz-UF-g3p" secondAttribute="trailing" constant="-333" id="Sb4-An-D95"/>
-                            <constraint firstItem="pjA-TK-L4b" firstAttribute="centerX" secondItem="J03-L3-26R" secondAttribute="centerX" id="XCl-Re-2dW"/>
-                            <constraint firstItem="pjA-TK-L4b" firstAttribute="centerY" secondItem="J03-L3-26R" secondAttribute="centerY" id="ohU-6v-rk4"/>
+                            <constraint firstItem="MSy-cd-OlS" firstAttribute="trailing" secondItem="IMi-kn-IQH" secondAttribute="trailing" id="ZWb-5z-h76"/>
+                            <constraint firstItem="Gvh-dF-zXO" firstAttribute="bottom" secondItem="MSy-cd-OlS" secondAttribute="bottom" constant="251" id="m9M-qH-ljP"/>
                             <constraint firstItem="Gvh-dF-zXO" firstAttribute="trailing" secondItem="IMi-kn-IQH" secondAttribute="trailing" constant="91" id="soR-T1-JLW"/>
+                            <constraint firstItem="MSy-cd-OlS" firstAttribute="centerX" secondItem="J03-L3-26R" secondAttribute="centerX" id="uT0-8E-ws4"/>
                         </constraints>
                     </view>
                     <connections>
                         <outlet property="menuButton" destination="4tO-rs-axZ" id="Swk-6a-ieN"/>
+                        <outlet property="webView" destination="MSy-cd-OlS" id="gtW-7T-D5n"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="KH8-44-Xnv" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
