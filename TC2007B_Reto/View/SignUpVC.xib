@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19158" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19162" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19141"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19144"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -11,6 +11,13 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SignUpVC" customModule="TC2007B_Reto" customModuleProvider="target">
             <connections>
+                <outlet property="confpassField" destination="zOC-rJ-W22" id="Ia5-Sv-5QH"/>
+                <outlet property="createBtn" destination="t3D-W8-Nqs" id="r87-w8-BBT"/>
+                <outlet property="loginBtn" destination="8N3-wo-wGW" id="rBr-1N-Adg"/>
+                <outlet property="nameField" destination="GN7-7u-hjs" id="qgZ-xo-Sqx"/>
+                <outlet property="passField" destination="Uom-9R-2lQ" id="5rQ-zT-9rc"/>
+                <outlet property="signInBtn" destination="8N3-wo-wGW" id="cfP-h1-Q1x"/>
+                <outlet property="userField" destination="ga7-Ut-Qg5" id="VTP-rY-jkg"/>
                 <outlet property="view" destination="MfH-fu-gAc" id="K7t-Pj-X5r"/>
             </connections>
         </placeholder>
@@ -128,6 +135,9 @@
                     <state key="normal" title="Inicia Sesión">
                         <color key="titleColor" systemColor="systemOrangeColor"/>
                     </state>
+                    <connections>
+                        <action selector="signInBtn:" destination="-1" eventType="touchUpInside" id="uVS-pk-bis"/>
+                    </connections>
                 </button>
             </subviews>
             <viewLayoutGuide key="safeArea" id="7zj-UW-jib"/>

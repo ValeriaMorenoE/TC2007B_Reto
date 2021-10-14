@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19162" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19144"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -30,7 +31,7 @@
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <state key="normal" title="Mis boletos y reservaciones"/>
+                                <state key="normal" title="Les news"/>
                                 <connections>
                                     <action selector="misComprasButtonPressed:" destination="azw-Q1-gvX" eventType="touchUpInside" id="XLq-F3-aIJ"/>
                                 </connections>
@@ -100,8 +101,8 @@
                                 </constraints>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SZa-1v-VfW">
-                                <rect key="frame" x="10" y="44" width="51" height="30"/>
-                                <state key="normal" title="LogOut"/>
+                                <rect key="frame" x="10" y="44" width="92" height="30"/>
+                                <state key="normal" title="Vale haz esto"/>
                                 <connections>
                                     <action selector="logOutButtonPressed:" destination="azw-Q1-gvX" eventType="touchUpInside" id="GQW-Do-Eo0"/>
                                 </connections>
@@ -138,6 +139,9 @@
                             <constraint firstItem="B3P-D9-pxn" firstAttribute="top" secondItem="4dv-Ll-udF" secondAttribute="bottom" constant="50" id="u3l-lK-vkE"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="ccj-6S-N53">
+                        <barButtonItem key="backBarButtonItem" title="Menu" id="AgT-VS-jOo"/>
+                    </navigationItem>
                     <connections>
                         <outlet property="boletosButton" destination="s0d-cI-7b4" id="jtt-Bg-ktQ"/>
                         <outlet property="exposicionesButton" destination="q6s-d0-Ooj" id="Hya-FD-YdV"/>
@@ -149,7 +153,27 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mxT-cw-NM1" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-2646.376811594203" y="-211.60714285714286"/>
+            <point key="canvasLocation" x="994.20289855072474" y="-211.60714285714286"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="vYf-ti-uEf">
+            <objects>
+                <navigationController storyboardIdentifier="MenuNavigationController" automaticallyAdjustsScrollViewInsets="NO" navigationBarHidden="YES" id="gBa-zs-kCS" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" opaque="NO" alpha="0.0" contentMode="scaleToFill" id="xco-1m-gFS">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <toolbar key="toolbar" opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="lrZ-25-8uN">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </toolbar>
+                    <connections>
+                        <segue destination="azw-Q1-gvX" kind="relationship" relationship="rootViewController" id="Dzy-Yu-Ppk"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="39s-40-1Iv" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="84.057971014492765" y="-211.60714285714286"/>
         </scene>
     </scenes>
     <resources>

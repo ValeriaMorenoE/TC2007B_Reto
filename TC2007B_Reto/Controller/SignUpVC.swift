@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import Firebase
 
 class SignUpVC: UIViewController {
 
@@ -15,14 +16,18 @@ class SignUpVC: UIViewController {
     @IBOutlet weak var confpassField: UITextField!
     @IBOutlet weak var createBtn: UIButton!
     @IBOutlet weak var loginBtn: UIButton!
+    @IBOutlet weak var signInBtn: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
         // Do any additional setup after loading the view.
     }
 
-
+    @IBAction func signInBtn(_ sender: Any) {
+        self.dismiss(animated: true, completion: nil)
+    }
+    
     /*
     // MARK: - Navigation
 
