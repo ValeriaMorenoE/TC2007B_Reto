@@ -18,12 +18,24 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         Auth.auth().addStateDidChangeListener() { auth, user
             in
             if user != nil {
+                let exposiciones = expoMenuViewController(nibName: "expoMenuViewController", bundle: nil)
+                let boletos = TicketRestaurantController(nibName: "TicketRestaurantController", bundle: nil)
+                let museo3dStoryboard = UIStoryboard(name: "Museo3d", bundle: nil)
+                let museo3dvc = museo3dStoryboard.instantiateViewController(identifier: "Museo3dViewController") as! Museo3dViewController
                 let storyboard = UIStoryboard(name: "Menu", bundle: nil)
-                //storyboard.instantiateViewController(withIdentifier: "MainMenuViewController")
-                let vc = storyboard.instantiateViewController(withIdentifier: "MenuNavigationController")
+                storyboard.instantiateViewController(withIdentifier: "MainMenuViewController")
+                let vc = storyboard.instantiateViewController(withIdentifier: "MainMenuViewController")
+                
+                var tabBarController = UITabBarController()
+                tabBarController.viewControllers = [vc, exposiciones, boletos, museo3dvc]
+                
+                vc.tabBarItem = UITabBarItem(title: "Noticias", image: nil, tag: 0)
+                exposiciones.tabBarItem = UITabBarItem(title: "Exposiciones", image: nil, tag: 1)
+                boletos.tabBarItem = UITabBarItem(title: "Visitas Guíadas", image: nil, tag: 2)
+                museo3dvc.tabBarItem = UITabBarItem(title: "Museo 3D", image: nil, tag: 3)
 
                 // Make it root or what ever you want here
-                UIApplication.shared.windows.first?.rootViewController = vc
+                UIApplication.shared.windows.first?.rootViewController = tabBarController
                 UIApplication.shared.windows.first?.makeKeyAndVisible()
                 //UIApplication.shared.windows.first?.rootViewController = vc
                 //UIApplication.shared.windows.first?.makeKeyAndVisible()

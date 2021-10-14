@@ -9,10 +9,13 @@ import UIKit
 
 class TicketRestaurantController: UIViewController {
     @IBOutlet weak var dateText: UITextField!
-    @IBOutlet weak var cantTickets: UITextField!
-    @IBOutlet weak var precio: UILabel!
     @IBOutlet weak var calendar: UIDatePicker!
     @IBOutlet weak var calendarContainer: UITableViewCell!
+    @IBOutlet weak var cantNiños: UITextField!
+    @IBOutlet weak var cantAdultos: UITextField!
+    @IBOutlet weak var cantAdultosMayores: UITextField!
+    @IBOutlet weak var precio: UILabel!
+    
     
     override func viewDidLoad() {
 //        let dateFormatter = DateFormatter()
@@ -39,8 +42,10 @@ class TicketRestaurantController: UIViewController {
 //    }
     
     @IBAction func updatePrice(_ sender: Any) {
-        let numBoletos = Int(cantTickets.text ?? "") ?? 0
-        precio.text = "$" + String(numBoletos*40)
+        let numNiños = Int(cantNiños.text ?? "") ?? 0
+        let numAdultos = Int(cantAdultos.text ?? "") ?? 0
+        let numAdultosMayores = Int(cantAdultosMayores.text ?? "") ?? 0
+        precio.text = "$" + String((numNiños+numAdultosMayores)*10+numAdultos*40)
     }
     
     /*
