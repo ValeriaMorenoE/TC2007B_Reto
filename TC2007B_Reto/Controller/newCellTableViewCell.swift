@@ -8,13 +8,11 @@
 import UIKit
 
 class newCellTableViewCell: UITableViewCell {
-
-    
-    @IBOutlet weak var imageCell: UIImageView!
-    @IBOutlet weak var titleCell: UILabel!
-    @IBOutlet weak var subtitleCell: UILabel!
-    @IBOutlet weak var dateCell: UILabel!
-    @IBOutlet weak var descriptionCell: UILabel!
+    @IBOutlet weak var newsImage: UIImageView!
+    @IBOutlet weak var title: UILabel!
+    @IBOutlet weak var subtitle: UILabel!
+    @IBOutlet weak var date: UILabel!
+    @IBOutlet weak var newsDescription: UILabel!
     
     override func awakeFromNib() {
         super.awakeFromNib()

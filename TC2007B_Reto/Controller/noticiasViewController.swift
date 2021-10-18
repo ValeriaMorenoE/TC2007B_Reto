@@ -9,7 +9,6 @@ import UIKit
 
 class noticiasViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     @IBOutlet weak var tableView: UITableView!
-    
     var noticias: [Noticia] = []
     
     override func viewDidLoad() {
@@ -20,27 +19,22 @@ class noticiasViewController: UIViewController, UITableViewDelegate, UITableView
         tableView.register(nib, forCellReuseIdentifier: "shakira_cell")
         
         // Do any additional setup after loading the view.
-        
         fetchData()
     }
     
     func fetchData(){
         NetworkManager.getExternalData(fileLocation: "https://pacific-inlet-83178.herokuapp.com/news", method: .get, parameters: nil, stringParameters: nil) {
             (event: [Noticia]?, error) in
-            if error != nil {
+            if error != nil{
                 print(error ?? "Error al hacer request")
-            } else  {
-                guard let noticias = event else {return}
-                self.noticias = noticias
+            } else {
+                guard let not = event else {return}
+                self.noticias = not
                 self.tableView.reloadData()
+                print("Got data")
             }
         }
     }
-    
-    override func viewWillAppear(_ animated: Bool) {
-        super.viewWillAppear(animated)
-        tableView.centerXAnchor.constraint(equalTo: self.view.centerXAnchor).isActive = true
-        }
 
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return noticias.count
@@ -48,17 +42,30 @@ class noticiasViewController: UIViewController, UITableViewDelegate, UITableView
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "shakira_cell") as! newCellTableViewCell
-        
-        cell.titleCell.text = noticias[indexPath.row].title
-        cell.dateCell.text = noticias[indexPath.row].date
-        cell.descriptionCell.text = noticias[indexPath.row].description
-        cell.subtitleCell.text = noticias[indexPath.row
-        ].subtitle
-        
+        cell.title.text = noticias[indexPath.row].title
+        cell.subtitle.text = noticias[indexPath.row].subtitle
+        cell.date.text = noticias[indexPath.row].date
+        cell.newsDescription.text = noticias[indexPath.row].description
         return cell
     }
     
+//    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+//        let VC = expoVC(nibName: "expoVC", bundle: nil)
+//        VC.expo = expos[indexPath.row]
+//
+//        present(VC, animated: true, completion: nil)
+//
+//    }
+    
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 270
+        let cell = tableView.dequeueReusableCell(withIdentifier: "shakira_cell") as! newCellTableViewCell
+        print(cell.newsDescription.intrinsicContentSize.width)
+
+//        if(cell.newsDescription.intrinsicContentSize.height > 57){
+//
+//            return 270-57+cell.newsDescription.intrinsicContentSize.height
+//
+//        }
+       return 270
     }
 }
