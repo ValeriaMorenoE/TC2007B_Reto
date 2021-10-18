@@ -8,7 +8,12 @@
 import UIKit
 
 class newCellTableViewCell: UITableViewCell {
-
+    @IBOutlet weak var newsImage: UIImageView!
+    @IBOutlet weak var title: UILabel!
+    @IBOutlet weak var subtitle: UILabel!
+    @IBOutlet weak var date: UILabel!
+    @IBOutlet weak var newsDescription: UILabel!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
