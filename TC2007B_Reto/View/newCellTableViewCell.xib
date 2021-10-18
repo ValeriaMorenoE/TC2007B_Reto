@@ -19,7 +19,6 @@
                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="exposicion2_3" translatesAutoresizingMaskIntoConstraints="NO" id="CfQ-8F-0Zs">
                         <rect key="frame" x="0.0" y="0.0" width="299" height="136"/>
                         <constraints>
-                            <constraint firstAttribute="width" constant="299" id="M8K-OT-345"/>
                             <constraint firstAttribute="height" constant="136" id="i4R-c1-TNU"/>
                         </constraints>
                     </imageView>
@@ -108,6 +107,7 @@ Cg
                 </subviews>
                 <constraints>
                     <constraint firstItem="CfQ-8F-0Zs" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="1Ee-tL-98I"/>
+                    <constraint firstItem="R6X-5u-GNt" firstAttribute="bottom" secondItem="H2p-sc-9uM" secondAttribute="bottom" constant="0.5" id="2JV-92-mBY"/>
                     <constraint firstItem="lhN-wx-Bxe" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="7" id="3dw-tv-P5T"/>
                     <constraint firstItem="6fl-9d-Jl8" firstAttribute="top" secondItem="lhN-wx-Bxe" secondAttribute="bottom" constant="8" id="7BM-2G-C7j"/>
                     <constraint firstItem="R6X-5u-GNt" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="7" id="Gay-6y-BD8"/>

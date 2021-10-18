@@ -40,10 +40,10 @@
                     <nil key="highlightedColor"/>
                 </label>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RJJ-tN-ebr">
-                    <rect key="frame" x="26.666666666666657" y="123" width="375" height="737"/>
+                    <rect key="frame" x="26.666666666666657" y="123" width="375" height="680"/>
                     <subviews>
                         <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" id="Gfv-i8-yuI">
-                            <rect key="frame" x="20" y="8" width="335" height="709"/>
+                            <rect key="frame" x="20" y="0.0" width="335" height="620"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             <color key="backgroundColor" red="0.94509803920000002" green="0.78994923829999997" blue="0.41951048369999999" alpha="0.0" colorSpace="custom" customColorSpace="displayP3"/>
                             <color key="separatorColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -54,7 +54,7 @@
                     </subviews>
                     <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     <constraints>
-                        <constraint firstAttribute="height" constant="737" id="0Y5-sJ-22K"/>
+                        <constraint firstAttribute="height" constant="680" id="GGB-e1-oUS"/>
                         <constraint firstAttribute="width" constant="375" id="wme-V1-fHd"/>
                     </constraints>
                 </view>
