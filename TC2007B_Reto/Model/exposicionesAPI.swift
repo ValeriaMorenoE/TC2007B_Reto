@@ -14,3 +14,19 @@ struct Expo: Decodable {
     let obras: String?
     let recorridoVirtual, videoURL: String?
 }
+
+struct Noticia: Decodable {
+    let id, title, subtitle, date: String
+    let welcomeDescription: String
+    let imageURL: String?
+}
+
+struct Evento: Decodable {
+    let id: String
+    let events: [String]
+    let date: String
+}
+
+struct Visita: Codable {
+    let id, guide, date: String
+}

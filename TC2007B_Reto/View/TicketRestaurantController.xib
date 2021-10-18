@@ -10,8 +10,10 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="TicketRestaurantController" customModule="TC2007B_Reto" customModuleProvider="target">
             <connections>
-                <outlet property="cantTickets" destination="645-nc-kgN" id="R1V-Lk-cG2"/>
-                <outlet property="precio" destination="Mul-ON-nPn" id="eHk-uO-dqH"/>
+                <outlet property="cantAdultos" destination="Mo0-qD-b7a" id="cny-Kj-QPy"/>
+                <outlet property="cantAdultosMayores" destination="OVr-r3-oT0" id="MlU-HP-luI"/>
+                <outlet property="cantNiños" destination="645-nc-kgN" id="rto-DJ-dz3"/>
+                <outlet property="precio" destination="Mul-ON-nPn" id="Itd-V6-ijn"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -55,9 +57,9 @@
                     </constraints>
                     <color key="textColor" red="0.62747007610000005" green="0.62743180990000003" blue="0.62745207550000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                     <fontDescription key="fontDescription" type="system" pointSize="18"/>
-                    <textInputTraits key="textInputTraits"/>
+                    <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
                     <connections>
-                        <action selector="updatePrice:" destination="-1" eventType="editingChanged" id="p5c-3K-cPj"/>
+                        <action selector="updatePrice:" destination="-1" eventType="editingChanged" id="RGG-Sr-t3B"/>
                     </connections>
                 </textField>
                 <textField opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="0" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Mo0-qD-b7a">
@@ -69,9 +71,9 @@
                     </constraints>
                     <color key="textColor" red="0.62747007610000005" green="0.62743180990000003" blue="0.62745207550000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                     <fontDescription key="fontDescription" type="system" pointSize="18"/>
-                    <textInputTraits key="textInputTraits"/>
+                    <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
                     <connections>
-                        <action selector="updatePrice:" destination="-1" eventType="editingChanged" id="bTb-H8-1AK"/>
+                        <action selector="updatePrice:" destination="-1" eventType="editingChanged" id="Hv9-FJ-ljX"/>
                     </connections>
                 </textField>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Fecha:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="69S-9K-EzQ">
@@ -151,9 +153,9 @@
                     </constraints>
                     <color key="textColor" red="0.62747007610000005" green="0.62743180990000003" blue="0.62745207550000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                     <fontDescription key="fontDescription" type="system" pointSize="18"/>
-                    <textInputTraits key="textInputTraits"/>
+                    <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
                     <connections>
-                        <action selector="updatePrice:" destination="-1" eventType="editingChanged" id="X8E-ez-o4w"/>
+                        <action selector="updatePrice:" destination="-1" eventType="editingChanged" id="omi-LS-prA"/>
                     </connections>
                 </textField>
             </subviews>

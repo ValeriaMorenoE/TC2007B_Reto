@@ -36,6 +36,11 @@ class noticiasViewController: UIViewController, UITableViewDelegate, UITableView
             }
         }
     }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        tableView.centerXAnchor.constraint(equalTo: self.view.centerXAnchor).isActive = true
+        }
 
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return noticias.count
