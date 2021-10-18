@@ -44,10 +44,10 @@ class noticiasViewController: UIViewController, UITableViewDelegate, UITableView
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "shakira_cell") as! newCellTableViewCell
-        cell.title.text = noticias[indexPath.row].title
-        cell.subtitle.text = noticias[indexPath.row].subtitle
-        cell.date.text = noticias[indexPath.row].date
-        cell.newsDescription.text = noticias[indexPath.row].description
+        cell.title.text = noticias[indexPath.row].title.trimmingCharacters(in: .newlines)
+        cell.subtitle.text = noticias[indexPath.row].subtitle.trimmingCharacters(in: .newlines)
+        cell.date.text = noticias[indexPath.row].date.trimmingCharacters(in: .newlines)
+        cell.newsDescription.text = noticias[indexPath.row].description.trimmingCharacters(in: .newlines)
         return cell
     }
     
