@@ -17,6 +17,8 @@ class noticiasViewController: UIViewController, UITableViewDelegate, UITableView
         tableView.dataSource = self
         let nib = UINib(nibName: "newCellTableViewCell", bundle: nil)
         tableView.register(nib, forCellReuseIdentifier: "shakira_cell")
+        self.tableView.rowHeight = UITableView.automaticDimension
+        self.tableView.estimatedRowHeight = 270
         
         // Do any additional setup after loading the view.
         fetchData()
@@ -42,10 +44,10 @@ class noticiasViewController: UIViewController, UITableViewDelegate, UITableView
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "shakira_cell") as! newCellTableViewCell
-        cell.title.text = noticias[indexPath.row].title
-        cell.subtitle.text = noticias[indexPath.row].subtitle
-        cell.date.text = noticias[indexPath.row].date
-        cell.newsDescription.text = noticias[indexPath.row].description
+        cell.title.text = noticias[indexPath.row].title.trimmingCharacters(in: .newlines)
+        cell.subtitle.text = noticias[indexPath.row].subtitle.trimmingCharacters(in: .newlines)
+        cell.date.text = noticias[indexPath.row].date.trimmingCharacters(in: .newlines)
+        cell.newsDescription.text = noticias[indexPath.row].description.trimmingCharacters(in: .newlines)
         return cell
     }
     
@@ -58,14 +60,12 @@ class noticiasViewController: UIViewController, UITableViewDelegate, UITableView
 //    }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "shakira_cell") as! newCellTableViewCell
-        print(cell.newsDescription.intrinsicContentSize.width)
 
 //        if(cell.newsDescription.intrinsicContentSize.height > 57){
 //
 //            return 270-57+cell.newsDescription.intrinsicContentSize.height
 //
 //        }
-       return 270
+       return UITableView.automaticDimension
     }
 }
