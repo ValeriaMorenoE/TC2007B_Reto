@@ -39,11 +39,11 @@
                     </attributedString>
                     <nil key="highlightedColor"/>
                 </label>
-                <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="RJJ-tN-ebr">
-                    <rect key="frame" x="27" y="99" width="375" height="817"/>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RJJ-tN-ebr">
+                    <rect key="frame" x="26.666666666666657" y="123" width="375" height="680"/>
                     <subviews>
                         <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" id="Gfv-i8-yuI">
-                            <rect key="frame" x="20" y="20" width="335" height="797"/>
+                            <rect key="frame" x="20" y="0.0" width="335" height="620"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             <color key="backgroundColor" red="0.94509803920000002" green="0.78994923829999997" blue="0.41951048369999999" alpha="0.0" colorSpace="custom" customColorSpace="displayP3"/>
                             <color key="separatorColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -54,19 +54,19 @@
                     </subviews>
                     <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     <constraints>
-                        <constraint firstAttribute="height" constant="817" id="HiD-pY-Tvb"/>
-                        <constraint firstAttribute="width" constant="375" id="YG5-JD-Omz"/>
+                        <constraint firstAttribute="height" constant="680" id="GGB-e1-oUS"/>
+                        <constraint firstAttribute="width" constant="375" id="wme-V1-fHd"/>
                     </constraints>
                 </view>
             </subviews>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <color key="backgroundColor" red="0.96739296477837866" green="0.97079329672235137" blue="0.98099429255426929" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
             <constraints>
+                <constraint firstItem="RJJ-tN-ebr" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" id="1BA-3j-XUt"/>
+                <constraint firstItem="RJJ-tN-ebr" firstAttribute="top" secondItem="KoS-c7-zo8" secondAttribute="bottom" constant="32" id="5qK-HG-gSr"/>
                 <constraint firstItem="kG7-zZ-xNE" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="34" id="RCO-qV-mxa"/>
                 <constraint firstItem="KoS-c7-zo8" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="18" id="XnK-8v-XUu"/>
-                <constraint firstItem="RJJ-tN-ebr" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="ZNi-l3-D0I"/>
                 <constraint firstItem="kG7-zZ-xNE" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="20" id="esU-az-qJ5"/>
-                <constraint firstItem="RJJ-tN-ebr" firstAttribute="top" secondItem="kG7-zZ-xNE" secondAttribute="top" id="fVQ-gW-rJk"/>
                 <constraint firstItem="KoS-c7-zo8" firstAttribute="leading" secondItem="kG7-zZ-xNE" secondAttribute="trailing" constant="12" id="tNl-QW-XuP"/>
             </constraints>
             <point key="canvasLocation" x="131.77570093457942" y="65.442764578833703"/>

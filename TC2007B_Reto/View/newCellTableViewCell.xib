@@ -55,10 +55,13 @@ Cg
                         <nil key="highlightedColor"/>
                     </label>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="R6X-5u-GNt">
-                        <rect key="frame" x="7" y="213" width="1157" height="11.5"/>
+                        <rect key="frame" x="7" y="213" width="280" height="57.5"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="280" id="hIL-Hg-zYk"/>
+                        </constraints>
                         <attributedString key="attributedText">
                             <fragment>
-                                <string key="content">Con motivo de las celebraciones por el 30 Aniversario de museo MARCO, se convocó a artistas radicados u originarios de Nuevo León a partir de marzo y hasta el 14 de mayo a participar en esta intervención artística en la explanada del Museo. El proyecto </string>
+                                <string key="content">Con motivo de las celebraciones por el 30 Aniversario de museo MARCO, se convocó a artistas radicados u originarios de Nuevo León a partir de marzo y hasta el 14 de mayo a participar en esta intervención artística en la explanada del Museo.</string>
                                 <attributes>
                                     <color key="NSBackgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     <color key="NSColor" red="0.33496671919999998" green="0.38955998419999999" blue="0.55295974020000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
@@ -68,19 +71,6 @@ Cg
                                         <tabStops/>
                                     </paragraphStyle>
                                     <color key="NSStrokeColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                </attributes>
-                            </fragment>
-                            <fragment content="[…]">
-                                <attributes>
-                                    <color key="NSBackgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                    <color key="NSColor" red="0.33496671919999998" green="0.38955998419999999" blue="0.55295974020000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                    <font key="NSFont" size="10" name="Helvetica"/>
-                                    <real key="NSKern" value="0.0"/>
-                                    <url key="NSLink" string="https://www.marco.org.mx/intervencion-artistica-en-la-explanada-de-marco/"/>
-                                    <paragraphStyle key="NSParagraphStyle" alignment="justified" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" defaultTabInterval="36" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
-                                        <tabStops/>
-                                    </paragraphStyle>
-                                    <color key="NSStrokeColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </attributes>
                             </fragment>
                         </attributedString>
@@ -117,6 +107,7 @@ Cg
                 </subviews>
                 <constraints>
                     <constraint firstItem="CfQ-8F-0Zs" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="1Ee-tL-98I"/>
+                    <constraint firstItem="R6X-5u-GNt" firstAttribute="bottom" secondItem="H2p-sc-9uM" secondAttribute="bottom" constant="0.5" id="2JV-92-mBY"/>
                     <constraint firstItem="lhN-wx-Bxe" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="7" id="3dw-tv-P5T"/>
                     <constraint firstItem="6fl-9d-Jl8" firstAttribute="top" secondItem="lhN-wx-Bxe" secondAttribute="bottom" constant="8" id="7BM-2G-C7j"/>
                     <constraint firstItem="R6X-5u-GNt" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="7" id="Gay-6y-BD8"/>
@@ -130,6 +121,13 @@ Cg
                 </constraints>
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="date" destination="qUD-qt-pnN" id="jkD-5N-cQF"/>
+                <outlet property="newsDescription" destination="R6X-5u-GNt" id="FU2-LQ-iTx"/>
+                <outlet property="newsImage" destination="CfQ-8F-0Zs" id="dE2-PN-q4H"/>
+                <outlet property="subtitle" destination="6fl-9d-Jl8" id="Ohp-wW-Ssi"/>
+                <outlet property="title" destination="lhN-wx-Bxe" id="idN-wE-WTk"/>
+            </connections>
             <point key="canvasLocation" x="122.46376811594205" y="139.95535714285714"/>
         </tableViewCell>
     </objects>
