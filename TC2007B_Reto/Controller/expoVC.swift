@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import WebKit
 
 class expoVC: UIViewController {
     
@@ -15,6 +16,9 @@ class expoVC: UIViewController {
     @IBOutlet weak var descLbl: UILabel!
     @IBOutlet weak var cerraduriaLbl: UILabel!
     @IBOutlet weak var museografiaLbl: UILabel!
+    @IBOutlet weak var imagenImg: UIImageView!
+    @IBOutlet weak var webView: WKWebView!
+    @IBOutlet weak var recorridoBtn: UIButton!
     
     var expo: Expo!
 
@@ -27,7 +31,12 @@ class expoVC: UIViewController {
         descLbl.text = expo.description
         cerraduriaLbl.text = "Curaduría: " + expo.cerraduria
         museografiaLbl.text = "Museografía: " + expo.museografia
-
+        
+        guard let url = URL(string: expo.photoUrl) else {return}
+        imagenImg.load(url: url)
+        
+        guard let urlVideo = URL(string: expo.videoUrl ?? "") else {return}
+        webView.load(URLRequest(url: urlVideo))
         // Do any additional setup after loading the view.
     }
 
