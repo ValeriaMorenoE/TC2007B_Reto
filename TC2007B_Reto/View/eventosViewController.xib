@@ -19,14 +19,28 @@
             <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Oky-bG-hva">
-                    <rect key="frame" x="40" y="104" width="334" height="688"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RZD-Hv-rSo">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                    <subviews>
+                        <tableView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Oky-bG-hva">
+                            <rect key="frame" x="40" y="104" width="334" height="688"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        </tableView>
+                    </subviews>
                     <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                </tableView>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="896" id="VBn-b7-Qov"/>
+                        <constraint firstAttribute="width" constant="414" id="Xub-kY-LUb"/>
+                    </constraints>
+                </view>
             </subviews>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="RZD-Hv-rSo" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="8HE-NW-9Q8"/>
+                <constraint firstItem="RZD-Hv-rSo" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="XQa-Qv-reO"/>
+            </constraints>
             <point key="canvasLocation" x="34.782608695652179" y="61.607142857142854"/>
         </view>
     </objects>
