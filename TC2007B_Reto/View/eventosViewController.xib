@@ -19,27 +19,32 @@
             <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RZD-Hv-rSo">
-                    <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                <view contentMode="scaleAspectFill" translatesAutoresizingMaskIntoConstraints="NO" id="RZD-Hv-rSo">
+                    <rect key="frame" x="0.0" y="44" width="414" height="818"/>
                     <subviews>
-                        <tableView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Oky-bG-hva">
-                            <rect key="frame" x="40" y="104" width="334" height="688"/>
-                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <tableView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Oky-bG-hva">
+                            <rect key="frame" x="0.0" y="0.0" width="414" height="818"/>
                             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         </tableView>
                     </subviews>
                     <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     <constraints>
-                        <constraint firstAttribute="height" constant="896" id="VBn-b7-Qov"/>
-                        <constraint firstAttribute="width" constant="414" id="Xub-kY-LUb"/>
+                        <constraint firstItem="Oky-bG-hva" firstAttribute="centerX" secondItem="RZD-Hv-rSo" secondAttribute="centerX" id="DFc-U8-coN"/>
+                        <constraint firstAttribute="bottom" secondItem="Oky-bG-hva" secondAttribute="bottom" id="l90-aj-wpb"/>
+                        <constraint firstAttribute="trailing" secondItem="Oky-bG-hva" secondAttribute="trailing" id="r0m-Q8-ULE"/>
+                        <constraint firstItem="Oky-bG-hva" firstAttribute="top" secondItem="RZD-Hv-rSo" secondAttribute="top" id="rg1-Sm-4kD"/>
+                        <constraint firstItem="Oky-bG-hva" firstAttribute="leading" secondItem="RZD-Hv-rSo" secondAttribute="leading" id="u2P-Hi-pvq"/>
                     </constraints>
                 </view>
             </subviews>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
             <constraints>
-                <constraint firstItem="RZD-Hv-rSo" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="8HE-NW-9Q8"/>
-                <constraint firstItem="RZD-Hv-rSo" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="XQa-Qv-reO"/>
+                <constraint firstItem="RZD-Hv-rSo" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="50y-lg-grZ"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="RZD-Hv-rSo" secondAttribute="trailing" id="9TJ-4B-Yuo"/>
+                <constraint firstItem="RZD-Hv-rSo" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="FQZ-QU-u1g"/>
+                <constraint firstItem="RZD-Hv-rSo" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="QEe-B1-cQG"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="RZD-Hv-rSo" secondAttribute="bottom" id="dvl-ZA-qo5"/>
             </constraints>
             <point key="canvasLocation" x="34.782608695652179" y="61.607142857142854"/>
         </view>

@@ -20,18 +20,17 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             if user != nil {
                 let exposiciones = expoMenuViewController(nibName: "expoMenuViewController", bundle: nil)
                 let boletos = TicketRestaurantController(nibName: "TicketRestaurantController", bundle: nil)
-                let museo3dStoryboard = UIStoryboard(name: "Museo3d", bundle: nil)
-                let museo3dvc = museo3dStoryboard.instantiateViewController(identifier: "Museo3dViewController") as! Museo3dViewController
+                let visitas = VisitasGuiadas(nibName: "VisitasGuiadas", bundle: nil)
                 let noticias = noticiasViewController(nibName: "noticiasViewController", bundle: nil)
                 let eventos = eventosViewController(nibName: "eventosViewController", bundle: nil)
                 
                 let tabBarController = UITabBarController()
-                tabBarController.viewControllers = [noticias, exposiciones, eventos, boletos, museo3dvc]
+                tabBarController.viewControllers = [noticias, exposiciones, eventos, boletos, visitas]
                 
                 noticias.tabBarItem = UITabBarItem(title: "Noticias", image: nil, tag: 0)
                 exposiciones.tabBarItem = UITabBarItem(title: "Exposiciones", image: nil, tag: 1)
                 boletos.tabBarItem = UITabBarItem(title: "Comprar Boletos", image: nil, tag: 3)
-                museo3dvc.tabBarItem = UITabBarItem(title: "Museo 3D", image: nil, tag: 4)
+                visitas.tabBarItem = UITabBarItem(title: "Visitas Guiadas", image: nil, tag: 4)
                 eventos.tabBarItem = UITabBarItem(title: "Marco Hoy", image: nil, tag: 2)
 
                 // Make it root or what ever you want here
