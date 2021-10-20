@@ -11,6 +11,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="noticiasViewController" customModule="TC2007B_Reto" customModuleProvider="target">
             <connections>
+                <outlet property="logOut" destination="4ja-2V-IQj" id="PJ8-H2-epm"/>
                 <outlet property="tableView" destination="Gfv-i8-yuI" id="RQW-8G-IxU"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
@@ -41,10 +42,10 @@
                     <nil key="highlightedColor"/>
                 </label>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RJJ-tN-ebr">
-                    <rect key="frame" x="26.666666666666657" y="123" width="375" height="680"/>
+                    <rect key="frame" x="34" y="123" width="360" height="709"/>
                     <subviews>
                         <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" id="Gfv-i8-yuI">
-                            <rect key="frame" x="20" y="0.0" width="335" height="620"/>
+                            <rect key="frame" x="0.0" y="-8" width="360" height="717"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             <color key="backgroundColor" red="0.94509803920000002" green="0.78994923829999997" blue="0.41951048369999999" alpha="0.0" colorSpace="custom" customColorSpace="displayP3"/>
                             <color key="separatorColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -54,20 +55,27 @@
                         </tableView>
                     </subviews>
                     <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                    <constraints>
-                        <constraint firstAttribute="height" constant="680" id="GGB-e1-oUS"/>
-                        <constraint firstAttribute="width" constant="375" id="wme-V1-fHd"/>
-                    </constraints>
                 </view>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4ja-2V-IQj">
+                    <rect key="frame" x="332" y="44" width="76" height="31"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <state key="normal" title="Button"/>
+                    <buttonConfiguration key="configuration" style="plain" title="Log Out"/>
+                    <connections>
+                        <action selector="logOutBtn:" destination="-1" eventType="touchUpInside" id="ynr-Mg-uI9"/>
+                    </connections>
+                </button>
             </subviews>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
             <constraints>
-                <constraint firstItem="RJJ-tN-ebr" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" id="1BA-3j-XUt"/>
                 <constraint firstItem="RJJ-tN-ebr" firstAttribute="top" secondItem="KoS-c7-zo8" secondAttribute="bottom" constant="32" id="5qK-HG-gSr"/>
+                <constraint firstItem="RJJ-tN-ebr" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="34" id="6fb-Hv-pec"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="RJJ-tN-ebr" secondAttribute="trailing" constant="34" id="A7e-Ke-9gk"/>
                 <constraint firstItem="kG7-zZ-xNE" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="34" id="RCO-qV-mxa"/>
                 <constraint firstItem="KoS-c7-zo8" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="18" id="XnK-8v-XUu"/>
                 <constraint firstItem="kG7-zZ-xNE" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="20" id="esU-az-qJ5"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="RJJ-tN-ebr" secondAttribute="bottom" constant="60" id="qGB-Oh-Xfe"/>
                 <constraint firstItem="KoS-c7-zo8" firstAttribute="leading" secondItem="kG7-zZ-xNE" secondAttribute="trailing" constant="12" id="tNl-QW-XuP"/>
             </constraints>
             <point key="canvasLocation" x="131.77570093457942" y="65.442764578833703"/>

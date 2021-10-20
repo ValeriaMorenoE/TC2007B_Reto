@@ -6,8 +6,10 @@
 //
 
 import UIKit
+import Firebase
 
 class noticiasViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
+    @IBOutlet weak var logOut: UIButton!
     @IBOutlet weak var tableView: UITableView!
     var noticias: [Noticia] = []
     
@@ -67,5 +69,10 @@ class noticiasViewController: UIViewController, UITableViewDelegate, UITableView
 //
 //        }
        return UITableView.automaticDimension
+    }
+    @IBAction func logOutBtn(_ sender: Any) {
+        do {
+            try? Auth.auth().signOut()
+        }
     }
 }

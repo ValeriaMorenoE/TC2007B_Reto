@@ -28,11 +28,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
                 let tabBarController = UITabBarController()
                 tabBarController.viewControllers = [noticias, exposiciones, eventos, boletos, museo3dvc]
                 
-                noticias.tabBarItem = UITabBarItem(title: "Noticias", image: nil, tag: 0)
-                exposiciones.tabBarItem = UITabBarItem(title: "Exposiciones", image: nil, tag: 1)
-                boletos.tabBarItem = UITabBarItem(title: "Comprar Boletos", image: nil, tag: 3)
-                museo3dvc.tabBarItem = UITabBarItem(title: "Museo 3D", image: nil, tag: 4)
-                eventos.tabBarItem = UITabBarItem(title: "Marco Hoy", image: nil, tag: 2)
+                noticias.tabBarItem = UITabBarItem(title: "Noticias", image: UIImage(systemName: "newspaper"), tag: 0)
+                exposiciones.tabBarItem = UITabBarItem(title: "Exposiciones", image: UIImage(systemName: "magazine"), tag: 1)
+                boletos.tabBarItem = UITabBarItem(title: "Comprar Boletos", image: UIImage(systemName: "calendar"), tag: 3)
+                museo3dvc.tabBarItem = UITabBarItem(title: "Museo 3D", image: UIImage(systemName: "view.3d"), tag: 4)
+                eventos.tabBarItem = UITabBarItem(title: "Marco Hoy", image: UIImage(systemName: "doc.text.image"), tag: 2)
+                
 
                 // Make it root or what ever you want here
                 UIApplication.shared.windows.first?.rootViewController = tabBarController
