@@ -125,6 +125,9 @@
                             </fragment>
                         </attributedString>
                     </state>
+                    <connections>
+                        <action selector="createAccount:" destination="-1" eventType="touchUpInside" id="V6C-g8-6Le"/>
+                    </connections>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8N3-wo-wGW">
                     <rect key="frame" x="248" y="819" width="103" height="21"/>
