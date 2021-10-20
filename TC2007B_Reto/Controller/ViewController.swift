@@ -32,8 +32,8 @@ class ViewController: UIViewController {
             return
         }
         
-        guard let password = passTxtField.text, email != "" else {
-            displayAlert(title: "Error", message: "El email no es valido")
+        guard let password = passTxtField.text, password != "" else {
+            displayAlert(title: "Error", message: "El password no es valido")
             return
         }
         
