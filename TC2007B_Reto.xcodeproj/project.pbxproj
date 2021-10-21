@@ -40,7 +40,10 @@
 		FBA36F55271DC3860039C9CA /* eventosViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FBA36F53271DC3860039C9CA /* eventosViewController.xib */; };
 		FBC6A253270DEA6600728CC1 /* Network.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBC6A252270DEA6600728CC1 /* Network.swift */; };
 		FBC6A255270DEB1300728CC1 /* exposicionesAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBC6A254270DEB1300728CC1 /* exposicionesAPI.swift */; };
-		FBDFEDD3271DB729003FC41E /* newsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBDFEDD1271DB729003FC41E /* newsVC.swift */; };
+		FBE4B3AC27205BE4005ABABD /* VisitasGuiadas.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBE4B3AA27205BE4005ABABD /* VisitasGuiadas.swift */; };
+		FBE4B3AD27205BE4005ABABD /* VisitasGuiadas.xib in Resources */ = {isa = PBXBuildFile; fileRef = FBE4B3AB27205BE4005ABABD /* VisitasGuiadas.xib */; };
+		FBE4B3B027205C24005ABABD /* VisitasCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBE4B3AE27205C24005ABABD /* VisitasCell.swift */; };
+		FBE4B3B127205C24005ABABD /* VisitasCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FBE4B3AF27205C24005ABABD /* VisitasCell.xib */; };
 		FBE9414D26EA3D7F0038C0B1 /* RestaurantViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBE9414B26EA3D7F0038C0B1 /* RestaurantViewController.swift */; };
 		FBE9414E26EA3D7F0038C0B1 /* RestaurantViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FBE9414C26EA3D7F0038C0B1 /* RestaurantViewController.xib */; };
 		FBF73F41272070D300EF66BD /* 3DViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBF73F3F272070D300EF66BD /* 3DViewController.swift */; };
@@ -116,7 +119,10 @@
 		FBA36F53271DC3860039C9CA /* eventosViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = eventosViewController.xib; sourceTree = "<group>"; };
 		FBC6A252270DEA6600728CC1 /* Network.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Network.swift; sourceTree = "<group>"; };
 		FBC6A254270DEB1300728CC1 /* exposicionesAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = exposicionesAPI.swift; sourceTree = "<group>"; };
-		FBDFEDD1271DB729003FC41E /* newsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = newsVC.swift; sourceTree = "<group>"; };
+		FBE4B3AA27205BE4005ABABD /* VisitasGuiadas.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VisitasGuiadas.swift; sourceTree = "<group>"; };
+		FBE4B3AB27205BE4005ABABD /* VisitasGuiadas.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = VisitasGuiadas.xib; sourceTree = "<group>"; };
+		FBE4B3AE27205C24005ABABD /* VisitasCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VisitasCell.swift; sourceTree = "<group>"; };
+		FBE4B3AF27205C24005ABABD /* VisitasCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = VisitasCell.xib; sourceTree = "<group>"; };
 		FBE9414B26EA3D7F0038C0B1 /* RestaurantViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantViewController.swift; sourceTree = "<group>"; };
 		FBE9414C26EA3D7F0038C0B1 /* RestaurantViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RestaurantViewController.xib; sourceTree = "<group>"; };
 		FBF73F3F272070D300EF66BD /* 3DViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 3DViewController.swift; sourceTree = "<group>"; };
@@ -230,9 +236,11 @@
 				00A02B1A26EA56CE004E25EA /* HistorialTableViewCell.xib */,
 				2F60B3B127171469006E501D /* noticiasViewController.xib */,
 				2F60B3B52717177B006E501D /* newCellTableViewCell.xib */,
+				FBE4B3AB27205BE4005ABABD /* VisitasGuiadas.xib */,
 				FBA36F53271DC3860039C9CA /* eventosViewController.xib */,
 				FBF73F40272070D300EF66BD /* 3DViewController.xib */,
 				FBF73F442720719A00EF66BD /* perfilViewController.xib */,
+				FBE4B3AF27205C24005ABABD /* VisitasCell.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -251,10 +259,11 @@
 				00A02AD526E90EB4004E25EA /* Museo3dViewController.swift */,
 				2F60B3B027171469006E501D /* noticiasViewController.swift */,
 				2F60B3B42717177B006E501D /* newCellTableViewCell.swift */,
-				FBDFEDD1271DB729003FC41E /* newsVC.swift */,
 				FBA36F52271DC3860039C9CA /* eventosViewController.swift */,
 				FBF73F3F272070D300EF66BD /* 3DViewController.swift */,
 				FBF73F432720719A00EF66BD /* perfilViewController.swift */,
+				FBE4B3AE27205C24005ABABD /* VisitasCell.swift */,
+				FBE4B3AA27205BE4005ABABD /* VisitasGuiadas.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -407,11 +416,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FBE4B3AD27205BE4005ABABD /* VisitasGuiadas.xib in Resources */,
 				00A02AAD26E8EF9E004E25EA /* Menu.storyboard in Resources */,
 				00A02AD126E90CED004E25EA /* Museo3d.storyboard in Resources */,
 				2F9B1D6126E8E6BD00C75E83 /* SignUpVC.xib in Resources */,
 				2F60B3B327171469006E501D /* noticiasViewController.xib in Resources */,
 				00F19A6C26D5EE6D006762A7 /* LaunchScreen.storyboard in Resources */,
+				FBE4B3B127205C24005ABABD /* VisitasCell.xib in Resources */,
 				FBA36F55271DC3860039C9CA /* eventosViewController.xib in Resources */,
 				F360304D26EACCBA00B7177D /* expoVC.xib in Resources */,
 				2F60B3B72717177B006E501D /* newCellTableViewCell.xib in Resources */,
@@ -559,11 +570,13 @@
 				2F9B1D6026E8E6BD00C75E83 /* SignUpVC.swift in Sources */,
 				FBDFEDD3271DB729003FC41E /* newsVC.swift in Sources */,
 				FBF73F41272070D300EF66BD /* 3DViewController.swift in Sources */,
+				FBE4B3AC27205BE4005ABABD /* VisitasGuiadas.swift in Sources */,
 				00A02ABD26E8F585004E25EA /* MenuViewController.swift in Sources */,
 				2F60B3B62717177B006E501D /* newCellTableViewCell.swift in Sources */,
 				FBC6A253270DEA6600728CC1 /* Network.swift in Sources */,
 				00F19A6426D5EE65006762A7 /* ViewController.swift in Sources */,
 				FBFC48BD26E8F28A000B7FAF /* expoViewCellTableViewCell.swift in Sources */,
+				FBE4B3B027205C24005ABABD /* VisitasCell.swift in Sources */,
 				FBFC48C126E8F655000B7FAF /* expoMenuViewController.swift in Sources */,
 				00A02AD626E90EB4004E25EA /* Museo3dViewController.swift in Sources */,
 				00F19A6026D5EE65006762A7 /* AppDelegate.swift in Sources */,

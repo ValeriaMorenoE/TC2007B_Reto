@@ -23,15 +23,17 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
                 let perfil = perfilViewController(nibName: "perfilViewController", bundle: nil)
                 let noticias = noticiasViewController(nibName: "noticiasViewController", bundle: nil)
                 let eventos = eventosViewController(nibName: "eventosViewController", bundle: nil)
+                let visitas = VisitasGuiadas(nibName: "VisitasGuiadas", bundle: nil)
                 
                 let tabBarController = UITabBarController()
-                tabBarController.viewControllers = [noticias, exposiciones, eventos, boletos, perfil]
+                tabBarController.viewControllers = [noticias, exposiciones, eventos, boletos, perfil, visitas]
                 
                 noticias.tabBarItem = UITabBarItem(title: "Noticias", image: UIImage(systemName: "newspaper"), tag: 0)
                 exposiciones.tabBarItem = UITabBarItem(title: "Exposiciones", image: UIImage(systemName: "book"), tag: 1)
                 boletos.tabBarItem = UITabBarItem(title: "Comprar Boletos", image: UIImage(systemName: "calendar"), tag: 3)
                 perfil.tabBarItem = UITabBarItem(title: "Perfil", image: UIImage(systemName: "person"), tag: 4)
                 eventos.tabBarItem = UITabBarItem(title: "Marco Hoy", image: UIImage(systemName: "clock"), tag: 2)
+                visitas.tabBarItem = UITabBarItem(title: "Visitas Guíadas", image: UIImage(systemName: "bookmark"), tag: 5)
                 
 
                 // Make it root or what ever you want here
