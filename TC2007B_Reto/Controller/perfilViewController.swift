@@ -15,12 +15,15 @@ class perfilViewController: UIViewController {
     @IBOutlet weak var Quejas: UIButton!
     @IBOutlet weak var Contacto: UIButton!
     @IBOutlet weak var EditarPerfil: UIButton!
+    @IBOutlet weak var userDisplayName: UILabel!
     
     @IBOutlet weak var Logout: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        let user = Auth.auth().currentUser
+        userDisplayName.text = user?.displayName
+        
         Logout.layer.cornerRadius = 15
         
         PreguntasFrecuentes.contentHorizontalAlignment = .left
