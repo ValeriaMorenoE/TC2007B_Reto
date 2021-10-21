@@ -14,6 +14,7 @@
                 <outlet property="descLbl" destination="Fgf-aU-7su" id="pJ0-SJ-JTA"/>
                 <outlet property="fechaLbl" destination="lk2-C4-Wdc" id="AxO-7L-orr"/>
                 <outlet property="imagenImg" destination="ehw-Au-DOB" id="OVF-64-JAd"/>
+                <outlet property="imgContainer" destination="Jyw-Wd-cHC" id="AO7-wt-m79"/>
                 <outlet property="museografiaLbl" destination="pbD-Vz-7eV" id="nUS-nQ-mNK"/>
                 <outlet property="recorridoBtn" destination="ohY-BA-mq8" id="0gz-yP-L76"/>
                 <outlet property="salasLbl" destination="KjH-ML-nU1" id="xsL-jF-mHt"/>
@@ -38,6 +39,7 @@
                                     <subviews>
                                         <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.90000000000000002" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ehw-Au-DOB">
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="250"/>
+                                            <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </imageView>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="fecha" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lk2-C4-Wdc">
                                             <rect key="frame" x="15" y="223" width="38.5" height="17"/>

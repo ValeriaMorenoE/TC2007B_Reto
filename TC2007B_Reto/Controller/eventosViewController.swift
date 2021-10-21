@@ -22,8 +22,12 @@ class eventosViewController: UIViewController, UITableViewDelegate, UITableViewD
         tableView.delegate = self
         tableView.dataSource = self
         mainFrameImg.layer.cornerRadius = 10
-        blackImg.dropShadow()
+        mainFrameImg.clipsToBounds = true
+        mainFrameImg.backgroundColor = UIColor.white
         blackImg.layer.cornerRadius = 10
+        blackImg.layer.masksToBounds = false
+        blackImg.clipsToBounds = false
+        blackImg.addShadowToView(shadow_color: UIColor.black, offset: CGSize(width: 0, height: 0), shadow_radius: 8.0, shadow_opacity: 0.5, corner_radius: 10.0)
 //        mainFrameImg.layer.shadowColor = UIColor.black.cgColor
 //        mainFrameImg.layer.shadowOffset = CGSize(width: 3, height: 3)
 //        mainFrameImg.layer.shadowOpacity = 0.7
