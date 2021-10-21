@@ -19,9 +19,11 @@ class VisitasCell: UITableViewCell {
     @IBOutlet weak var guiaVisita: UILabel!
     @IBOutlet weak var numPersonasVisita: UITextField!
     @IBOutlet weak var visitaId: UILabel!
+    @IBOutlet weak var reservarBtn: UIButton!
     
     override func awakeFromNib() {
         super.awakeFromNib()
+        reservarBtn.layer.cornerRadius = 10
         // Initialization code
     }
 

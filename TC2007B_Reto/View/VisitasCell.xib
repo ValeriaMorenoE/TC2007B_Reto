@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19162" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19144"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -56,13 +57,22 @@
                                 <rect key="frame" x="0.0" y="85" width="320" height="128"/>
                                 <subviews>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="eEa-K8-VHu">
-                                        <rect key="frame" x="188.5" y="0.0" width="97.5" height="34"/>
+                                        <rect key="frame" x="188.5" y="4" width="97.5" height="34"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Número de Personas:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AUb-cJ-qt9">
+                                        <rect key="frame" x="16" y="12" width="147.5" height="18"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5wH-U0-HL1">
-                                        <rect key="frame" x="109" y="65" width="102" height="30"/>
+                                        <rect key="frame" x="100" y="69" width="120" height="30"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="120" id="N4Y-Mb-xan"/>
+                                        </constraints>
                                         <state key="normal" title="Reservar Visita">
                                             <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
@@ -70,12 +80,6 @@
                                             <action selector="botonReservarVisita:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="Oxn-Uu-nXt"/>
                                         </connections>
                                     </button>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Número de Personas:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AUb-cJ-qt9">
-                                        <rect key="frame" x="16" y="8" width="147.5" height="18"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
-                                        <nil key="textColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
                                 </subviews>
                                 <color key="backgroundColor" red="0.94509803920000002" green="0.78994923829999997" blue="0.41951048369999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <constraints>
@@ -84,8 +88,8 @@
                                     <constraint firstItem="5wH-U0-HL1" firstAttribute="top" secondItem="AUb-cJ-qt9" secondAttribute="bottom" constant="39" id="9zB-ob-P0D"/>
                                     <constraint firstItem="eEa-K8-VHu" firstAttribute="leading" secondItem="AUb-cJ-qt9" secondAttribute="trailing" constant="25" id="I9l-ze-lMF"/>
                                     <constraint firstItem="5wH-U0-HL1" firstAttribute="centerX" secondItem="a3S-z7-MMC" secondAttribute="centerX" id="MSS-b8-ray"/>
-                                    <constraint firstItem="eEa-K8-VHu" firstAttribute="top" secondItem="a3S-z7-MMC" secondAttribute="top" id="QKh-pj-AyA"/>
-                                    <constraint firstItem="AUb-cJ-qt9" firstAttribute="top" secondItem="a3S-z7-MMC" secondAttribute="top" constant="8" id="Yfm-4I-enQ"/>
+                                    <constraint firstItem="eEa-K8-VHu" firstAttribute="top" secondItem="a3S-z7-MMC" secondAttribute="top" constant="4" id="QKh-pj-AyA"/>
+                                    <constraint firstItem="AUb-cJ-qt9" firstAttribute="top" secondItem="a3S-z7-MMC" secondAttribute="top" constant="12" id="Yfm-4I-enQ"/>
                                     <constraint firstAttribute="trailing" secondItem="eEa-K8-VHu" secondAttribute="trailing" constant="34" id="zIw-le-k3Z"/>
                                 </constraints>
                             </view>
@@ -105,6 +109,7 @@
                 <outlet property="fechaVisita" destination="Ok7-Pm-MMf" id="Bc4-iR-knz"/>
                 <outlet property="guiaVisita" destination="eJk-g9-zXa" id="O9D-sI-0Gg"/>
                 <outlet property="numPersonasVisita" destination="eEa-K8-VHu" id="FuI-KN-2Xs"/>
+                <outlet property="reservarBtn" destination="5wH-U0-HL1" id="imn-eh-qlK"/>
                 <outlet property="visitaId" destination="kZ5-3L-gjU" id="WdO-Od-Lmj"/>
             </connections>
             <point key="canvasLocation" x="18.840579710144929" y="122.20982142857142"/>
