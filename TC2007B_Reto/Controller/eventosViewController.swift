@@ -8,6 +8,8 @@
 import UIKit
 
 class eventosViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
+    @IBOutlet weak var mainFrameImg: UIImageView!
+    @IBOutlet weak var blackImg: UIView!
     
     @IBOutlet weak var tableView: UITableView!
     var eventos : [Evento] = []
@@ -15,8 +17,19 @@ class eventosViewController: UIViewController, UITableViewDelegate, UITableViewD
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        //mainFrameImg.dropShadow(scale: false)
+        
         tableView.delegate = self
         tableView.dataSource = self
+        mainFrameImg.layer.cornerRadius = 10
+        blackImg.dropShadow()
+        blackImg.layer.cornerRadius = 10
+//        mainFrameImg.layer.shadowColor = UIColor.black.cgColor
+//        mainFrameImg.layer.shadowOffset = CGSize(width: 3, height: 3)
+//        mainFrameImg.layer.shadowOpacity = 0.7
+//        mainFrameImg.layer.shadowRadius = 4.0
+//        mainFrameImg.layer.backgroundColor = UIColor.black.cgColor
+//        mainFrameImg.layer.opacity = 0.55
         fetchData()
     }
     

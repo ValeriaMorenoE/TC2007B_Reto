@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
-    <device id="retina6_1" orientation="portrait" appearance="light"/>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19162" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_5" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19144"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -10,6 +11,8 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="eventosViewController" customModule="TC2007B_Reto" customModuleProvider="target">
             <connections>
+                <outlet property="blackImg" destination="Zy2-qx-2HU" id="AFx-me-5C1"/>
+                <outlet property="mainFrameImg" destination="Kq8-EW-L6v" id="5fh-pA-MWn"/>
                 <outlet property="tableView" destination="Oky-bG-hva" id="BkB-t0-JS6"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
@@ -19,18 +22,74 @@
             <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="thumbnail1" translatesAutoresizingMaskIntoConstraints="NO" id="Kq8-EW-L6v" userLabel="Main image">
+                    <rect key="frame" x="20" y="125.66666666666669" width="374" height="300"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="300" id="GIm-lo-yRB"/>
+                    </constraints>
+                </imageView>
+                <view alpha="0.14999999999999999" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Zy2-qx-2HU">
+                    <rect key="frame" x="20" y="125.66666666666669" width="374" height="300"/>
+                    <color key="backgroundColor" systemColor="labelColor"/>
+                </view>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Miercoles, 20 de Agosto" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LH7-3S-H1J" userLabel="Fecha">
+                    <rect key="frame" x="20" y="63.999999999999993" width="156.33333333333334" height="15.666666666666664"/>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="13"/>
+                    <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hace 1 hora • Monterrey, NL" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ite-IZ-sZW">
+                    <rect key="frame" x="35" y="395" width="170.33333333333334" height="15.666666666666686"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Marco presenta su primer aplicación para iOS" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yjo-cp-dAH">
+                    <rect key="frame" x="35" y="339" width="309" height="48"/>
+                    <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="20"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hoy en Marco" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zds-sh-PgY" userLabel="Hoy">
+                    <rect key="frame" x="20" y="79.666666666666671" width="198" height="36"/>
+                    <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="30"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
                 <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Oky-bG-hva">
-                    <rect key="frame" x="40" y="104" width="334" height="688"/>
+                    <rect key="frame" x="20" y="433" width="374" height="361"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                 </tableView>
             </subviews>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-            <point key="canvasLocation" x="34.782608695652179" y="61.607142857142854"/>
+            <constraints>
+                <constraint firstItem="Zy2-qx-2HU" firstAttribute="leading" secondItem="Kq8-EW-L6v" secondAttribute="leading" id="Afv-vD-Er7"/>
+                <constraint firstItem="Kq8-EW-L6v" firstAttribute="trailing" secondItem="yjo-cp-dAH" secondAttribute="trailing" constant="50" id="BAQ-8n-02R"/>
+                <constraint firstItem="Kq8-EW-L6v" firstAttribute="bottom" secondItem="Zy2-qx-2HU" secondAttribute="bottom" id="Hxf-98-oUG"/>
+                <constraint firstItem="Kq8-EW-L6v" firstAttribute="trailing" secondItem="Zy2-qx-2HU" secondAttribute="trailing" id="K5B-SZ-M9t"/>
+                <constraint firstItem="Kq8-EW-L6v" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="Lce-TL-SHX"/>
+                <constraint firstItem="LH7-3S-H1J" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="20" id="PUv-dx-coW"/>
+                <constraint firstItem="zds-sh-PgY" firstAttribute="top" secondItem="LH7-3S-H1J" secondAttribute="bottom" id="TFK-N5-lug"/>
+                <constraint firstItem="Ite-IZ-sZW" firstAttribute="top" secondItem="yjo-cp-dAH" secondAttribute="bottom" constant="8" symbolic="YES" id="Ubf-hE-UAv"/>
+                <constraint firstItem="Ite-IZ-sZW" firstAttribute="leading" secondItem="Kq8-EW-L6v" secondAttribute="leading" constant="15" id="VWJ-VV-Gpe"/>
+                <constraint firstItem="LH7-3S-H1J" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="cwO-8q-fPv"/>
+                <constraint firstItem="zds-sh-PgY" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="dT1-79-ceT"/>
+                <constraint firstItem="Zy2-qx-2HU" firstAttribute="top" secondItem="Kq8-EW-L6v" secondAttribute="top" id="gUL-m4-Ggw"/>
+                <constraint firstItem="Kq8-EW-L6v" firstAttribute="baseline" secondItem="Ite-IZ-sZW" secondAttribute="bottom" constant="15" id="hwJ-50-QOp"/>
+                <constraint firstItem="Kq8-EW-L6v" firstAttribute="top" secondItem="zds-sh-PgY" secondAttribute="bottom" constant="10" id="oac-tB-JIS"/>
+                <constraint firstItem="Kq8-EW-L6v" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" constant="-20" id="wuo-mD-b1B"/>
+                <constraint firstItem="yjo-cp-dAH" firstAttribute="leading" secondItem="Kq8-EW-L6v" secondAttribute="leading" constant="15" id="zw1-bn-01B"/>
+            </constraints>
+            <point key="canvasLocation" x="33.333333333333336" y="60.9375"/>
         </view>
     </objects>
     <resources>
+        <image name="thumbnail1" width="1200" height="800"/>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
