@@ -36,6 +36,9 @@ class expoVC: UIViewController {
         imagenImg.load(url: url)
         
         guard let urlVideo = URL(string: expo.videoUrl ?? "") else {return}
+        let configuration = WKWebViewConfiguration()
+        configuration.allowsInlineMediaPlayback = true
+        //webView.
         webView.load(URLRequest(url: urlVideo))
         // Do any additional setup after loading the view.
     }
