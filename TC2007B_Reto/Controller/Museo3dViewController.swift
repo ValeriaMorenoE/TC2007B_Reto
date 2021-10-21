@@ -6,7 +6,16 @@
 //
 
 import UIKit
+import WebKit
 
 class Museo3dViewController: UIViewController {
+    
+    var link: String?
+    @IBOutlet weak var wevView: WKWebView!
+    
+    override func viewDidLoad() {
+        guard let url = URL(string: link ?? "https://www.museomarco.360s.mx") else {return}
+        wevView.load(URLRequest(url: url))
+    }
     
 }

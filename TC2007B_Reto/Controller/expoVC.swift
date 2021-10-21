@@ -48,6 +48,8 @@ class expoVC: UIViewController {
         
         let vc = museo3dStoryboard.instantiateViewController(identifier: "Museo3dViewController") as! Museo3dViewController
         
+        vc.link = expo.recorridoVirtual
+        
         present(vc, animated: true, completion: nil)
     }
     
