@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19162" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19144"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -16,6 +17,7 @@
                 <outlet property="Logout" destination="rEq-Xd-kah" id="jom-bM-Idt"/>
                 <outlet property="PreguntasFrecuentes" destination="c0v-uv-cr5" id="UjV-ld-gnQ"/>
                 <outlet property="Quejas" destination="23U-A6-5l7" id="LGa-qy-nCM"/>
+                <outlet property="userDisplayName" destination="dsO-3B-WkD" id="XCi-yc-Zfs"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -38,12 +40,13 @@
                     </constraints>
                 </imageView>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dsO-3B-WkD">
-                    <rect key="frame" x="129.5" y="322" width="155" height="26.5"/>
+                    <rect key="frame" x="181.5" y="322" width="51.5" height="26.5"/>
                     <attributedString key="attributedText">
-                        <fragment content="Ruben Robles">
+                        <fragment content="User">
                             <attributes>
                                 <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
                                 <font key="NSFont" size="23" name="Helvetica-Bold"/>
+                                <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                             </attributes>
                         </fragment>
                     </attributedString>

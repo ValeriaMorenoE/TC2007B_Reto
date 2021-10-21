@@ -82,7 +82,7 @@ class SignUpVC: UIViewController {
                 changeRequest?.commitChanges { error in
                     if error != nil {
                         self.displayAlert(title: "Error", message: error?.localizedDescription ?? "")
-                        print(error)
+                        print("Algo paso")
                     }
                 }
             }
