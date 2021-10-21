@@ -59,9 +59,23 @@ class expoMenuViewController: UIViewController, UITableViewDelegate, UITableView
         
         //cell.expoThumbnail.image = UIImage(named: "thumbnail1")
         cell.textLabel?.text = expos[indexPath.row].title
-        let date = formatter.date(from: expos[indexPath.row].startDate)
+        
+        
+        //let date = formatter.date(from: e)
+        
+        let dateFormatterGet = DateFormatter()
+           dateFormatterGet.dateFormat = "yyyy-MM-dd'T'HH:mm:ss.SSS'Z'"
+
+           let dateFormatter = DateFormatter()
+           dateFormatter.dateStyle = .medium
+           dateFormatter.timeStyle = .none
+           //    dateFormatter.locale = Locale(identifier: "en_US") //uncomment if you don't want to get the system default format.
+
+           let dateObj: Date? = dateFormatterGet.date(from: expos[indexPath.row].startDate)
+        print(dateFormatter.string(from: dateObj!))
+        
         //cell.detailTextLabel?.text = formatter.string(from: date)
-        cell.detailTextLabel?.text = expos[indexPath.row].startDate
+        cell.detailTextLabel?.text = dateFormatter.string(from: dateObj!)
         
         return cell
     }
