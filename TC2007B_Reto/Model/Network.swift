@@ -115,7 +115,7 @@ class NetworkManager {
         
     }
     
-    static func postData<T: Decodable>(fileLocation: String, parameters : [String: Any]?, completionHandler: @escaping (T?,Error?) -> Void){
+    static func postData<T: Codable>(fileLocation: String, parameters : [String: Any]?, completionHandler: @escaping (T?,Error?) -> Void){
                 
         if let url = URL(string: fileLocation) {
             var request = URLRequest(url: url)

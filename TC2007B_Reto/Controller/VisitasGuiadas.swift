@@ -46,7 +46,8 @@ class VisitasGuiadas: UIViewController, UITableViewDelegate, UITableViewDataSour
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableVisitas.dequeueReusableCell(withIdentifier: "visitas_cell") as! VisitasCell
         cell.fechaVisita.text = visitas[indexPath.row].date
-        cell.guiaVisita.text = visitas[indexPath.row].guide
+        cell.guiaVisita.text = "Guía: "+visitas[indexPath.row].guide
+        cell.visitaId.text = visitas[indexPath.row].id
         return cell
     }
 
@@ -60,6 +61,7 @@ class VisitasGuiadas: UIViewController, UITableViewDelegate, UITableViewDataSour
         
         tableView.beginUpdates()
         tableView.endUpdates()
+        tableView.deselectRow(at: indexPath, animated: false)
     
         
     }
@@ -73,6 +75,8 @@ class VisitasGuiadas: UIViewController, UITableViewDelegate, UITableViewDataSour
 //        }
         return UITableView.automaticDimension
     }
+    
+    
     
     /*
     // MARK: - Navigation
