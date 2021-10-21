@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19162" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19144"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -19,24 +20,51 @@
             <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
+                <view alpha="0.20000000298023224" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pED-u4-HoY">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="200"/>
+                    <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                </view>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="exposicion2_3" translatesAutoresizingMaskIntoConstraints="NO" id="xYW-Ey-RdI">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="200"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="200" id="4R7-fj-ygr"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Visitas Guiadas" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="q5N-Bx-IuI">
+                    <rect key="frame" x="57.5" y="120" width="299.5" height="48"/>
+                    <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="40"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
                 <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="WLv-SD-5Vi">
-                    <rect key="frame" x="0.0" y="44" width="414" height="790"/>
+                    <rect key="frame" x="0.0" y="200" width="414" height="634"/>
                     <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                 </tableView>
             </subviews>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
             <constraints>
+                <constraint firstItem="xYW-Ey-RdI" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="8zL-90-V9B"/>
+                <constraint firstAttribute="top" secondItem="xYW-Ey-RdI" secondAttribute="top" id="GjZ-Qm-Tp8"/>
+                <constraint firstItem="pED-u4-HoY" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="Mt4-Fr-347"/>
                 <constraint firstItem="WLv-SD-5Vi" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="P2P-AY-xlT"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="WLv-SD-5Vi" secondAttribute="bottom" constant="28" id="U7p-Lj-l67"/>
+                <constraint firstItem="q5N-Bx-IuI" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="ZPx-pc-1EC"/>
                 <constraint firstItem="WLv-SD-5Vi" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" id="czH-ia-GIX"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="WLv-SD-5Vi" secondAttribute="trailing" id="drq-bn-iOm"/>
-                <constraint firstItem="WLv-SD-5Vi" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="ir6-Ed-9ES"/>
+                <constraint firstItem="q5N-Bx-IuI" firstAttribute="top" secondItem="xYW-Ey-RdI" secondAttribute="top" constant="120" id="kN3-Qa-hi8"/>
+                <constraint firstItem="WLv-SD-5Vi" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="lCY-xf-9YS"/>
+                <constraint firstItem="xYW-Ey-RdI" firstAttribute="bottom" secondItem="pED-u4-HoY" secondAttribute="bottom" id="lVT-DC-SJZ"/>
+                <constraint firstItem="WLv-SD-5Vi" firstAttribute="top" secondItem="pED-u4-HoY" secondAttribute="bottom" id="oas-AC-aNN"/>
+                <constraint firstItem="pED-u4-HoY" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="rRG-ge-35X"/>
+                <constraint firstItem="pED-u4-HoY" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="y6P-3m-N7S"/>
+                <constraint firstItem="xYW-Ey-RdI" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="zYH-uz-5BO"/>
             </constraints>
             <point key="canvasLocation" x="18.840579710144929" y="65.625"/>
         </view>
     </objects>
     <resources>
+        <image name="exposicion2_3" width="600" height="400"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
