@@ -11,6 +11,8 @@ class expoMenuViewController: UIViewController, UITableViewDelegate, UITableView
     
     
     @IBOutlet weak var tableView: UITableView!
+    @IBOutlet weak var frameImg: UIImageView!
+    @IBOutlet weak var frameImgColor: UIView!
     
     var expos: [Expo] = []
     
@@ -19,6 +21,9 @@ class expoMenuViewController: UIViewController, UITableViewDelegate, UITableView
         
         tableView.delegate = self
         tableView.dataSource = self
+        frameImg.layer.cornerRadius = 10
+        frameImgColor.dropShadow()
+        frameImgColor.layer.cornerRadius = 10
         
         let nib = UINib(nibName: "expoViewCellTableViewCell", bundle: nil)
         tableView.register(nib, forCellReuseIdentifier: "expoCell")

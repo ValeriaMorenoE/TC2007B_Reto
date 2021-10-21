@@ -27,7 +27,7 @@ class expoVC: UIViewController {
         
         tituloLbl.text = expo.title
         fechaLbl.text = expo.startDate
-        salasLbl.text = expo.salas
+        salasLbl.text = "Disponible en sala: " + expo.salas
         descLbl.text = expo.description
         cerraduriaLbl.text = "Curaduría: " + expo.cerraduria
         museografiaLbl.text = "Museografía: " + expo.museografia
