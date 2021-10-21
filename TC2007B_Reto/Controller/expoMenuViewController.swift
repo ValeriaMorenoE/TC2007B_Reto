@@ -22,7 +22,7 @@ class expoMenuViewController: UIViewController, UITableViewDelegate, UITableView
         tableView.delegate = self
         tableView.dataSource = self
         frameImg.layer.cornerRadius = 10
-        frameImgColor.dropShadow()
+        //frameImgColor.dropShadow()
         frameImgColor.layer.cornerRadius = 10
         
         let nib = UINib(nibName: "expoViewCellTableViewCell", bundle: nil)
@@ -54,9 +54,13 @@ class expoMenuViewController: UIViewController, UITableViewDelegate, UITableView
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
         let cell = UITableViewCell(style: .subtitle, reuseIdentifier: "exposicion")
+        let formatter = DateFormatter()
+        formatter.dateFormat = "MMM d, h:mm a"
         
         //cell.expoThumbnail.image = UIImage(named: "thumbnail1")
         cell.textLabel?.text = expos[indexPath.row].title
+        let date = formatter.date(from: expos[indexPath.row].startDate)
+        //cell.detailTextLabel?.text = formatter.string(from: date)
         cell.detailTextLabel?.text = expos[indexPath.row].startDate
         
         return cell
