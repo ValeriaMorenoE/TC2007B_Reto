@@ -19,7 +19,7 @@ struct Expo: Decodable {
 struct Noticia: Decodable {
     let id, title, subtitle, date: String
     let description: String
-    let imageURL: String?
+    let photoUrl: String?
 }
 
 struct Evento: Decodable {

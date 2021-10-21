@@ -50,6 +50,10 @@ class noticiasViewController: UIViewController, UITableViewDelegate, UITableView
         cell.subtitle.text = noticias[indexPath.row].subtitle.trimmingCharacters(in: .newlines)
         cell.date.text = noticias[indexPath.row].date.trimmingCharacters(in: .newlines)
         cell.newsDescription.text = noticias[indexPath.row].description.trimmingCharacters(in: .newlines)
+        
+        guard let url = URL(string: noticias[indexPath.row].photoUrl ?? "") else {return UITableViewCell()}
+        cell.newsImage.load(url: url)
+        
         return cell
     }
     
@@ -70,9 +74,5 @@ class noticiasViewController: UIViewController, UITableViewDelegate, UITableView
 //        }
        return UITableView.automaticDimension
     }
-    @IBAction func logOutBtn(_ sender: Any) {
-        do {
-            try? Auth.auth().signOut()
-        }
-    }
+
 }
