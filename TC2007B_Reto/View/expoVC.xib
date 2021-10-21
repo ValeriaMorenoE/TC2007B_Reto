@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19162" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19144"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -13,10 +14,13 @@
                 <outlet property="cerraduriaLbl" destination="2Q8-oj-Gqn" id="xrz-4D-9SX"/>
                 <outlet property="descLbl" destination="Fgf-aU-7su" id="pJ0-SJ-JTA"/>
                 <outlet property="fechaLbl" destination="lk2-C4-Wdc" id="AxO-7L-orr"/>
+                <outlet property="imagenImg" destination="ehw-Au-DOB" id="OVF-64-JAd"/>
                 <outlet property="museografiaLbl" destination="pbD-Vz-7eV" id="nUS-nQ-mNK"/>
+                <outlet property="recorridoBtn" destination="ohY-BA-mq8" id="0gz-yP-L76"/>
                 <outlet property="salasLbl" destination="KjH-ML-nU1" id="xsL-jF-mHt"/>
                 <outlet property="tituloLbl" destination="K2m-zZ-ioR" id="UA4-xR-Qii"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+                <outlet property="webView" destination="Hdp-yt-5Ac" id="uAM-vl-eBQ"/>
             </connections>
         </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
@@ -28,7 +32,7 @@
                     <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                     <subviews>
                         <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="YPx-Dl-xbo">
-                            <rect key="frame" x="0.0" y="0.0" width="414" height="1050"/>
+                            <rect key="frame" x="0.0" y="0.0" width="414" height="1280"/>
                             <subviews>
                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Jyw-Wd-cHC">
                                     <rect key="frame" x="0.0" y="0.0" width="414" height="350"/>
@@ -51,6 +55,9 @@
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
+                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ehw-Au-DOB">
+                                            <rect key="frame" x="10" y="196.5" width="394" height="143.5"/>
+                                        </imageView>
                                     </subviews>
                                     <color key="backgroundColor" systemColor="systemYellowColor"/>
                                     <constraints>
@@ -58,12 +65,16 @@
                                         <constraint firstItem="KjH-ML-nU1" firstAttribute="top" secondItem="lk2-C4-Wdc" secondAttribute="bottom" constant="10" id="20h-jQ-k2s"/>
                                         <constraint firstItem="K2m-zZ-ioR" firstAttribute="top" secondItem="Jyw-Wd-cHC" secondAttribute="top" constant="70" id="J8Q-Up-6bh"/>
                                         <constraint firstAttribute="trailing" secondItem="KjH-ML-nU1" secondAttribute="trailing" constant="25" id="JMx-Cr-dbg"/>
+                                        <constraint firstItem="ehw-Au-DOB" firstAttribute="leading" secondItem="Jyw-Wd-cHC" secondAttribute="leading" constant="10" id="P4z-WN-esH"/>
                                         <constraint firstAttribute="trailing" secondItem="K2m-zZ-ioR" secondAttribute="trailing" constant="5" id="QPQ-tD-Y2N"/>
                                         <constraint firstItem="KjH-ML-nU1" firstAttribute="leading" secondItem="Jyw-Wd-cHC" secondAttribute="leading" constant="25" id="WQa-Qb-XDg"/>
                                         <constraint firstItem="K2m-zZ-ioR" firstAttribute="leading" secondItem="Jyw-Wd-cHC" secondAttribute="leading" constant="5" id="YMf-GW-QOk"/>
+                                        <constraint firstItem="ehw-Au-DOB" firstAttribute="top" secondItem="KjH-ML-nU1" secondAttribute="bottom" constant="22" id="fi0-AT-TXf"/>
+                                        <constraint firstAttribute="trailing" secondItem="ehw-Au-DOB" secondAttribute="trailing" constant="10" id="fia-nV-beR"/>
                                         <constraint firstItem="lk2-C4-Wdc" firstAttribute="leading" secondItem="Jyw-Wd-cHC" secondAttribute="leading" constant="20" id="l9X-zq-Dg7"/>
                                         <constraint firstItem="lk2-C4-Wdc" firstAttribute="top" secondItem="K2m-zZ-ioR" secondAttribute="bottom" constant="15" id="plA-cj-Zs6"/>
                                         <constraint firstAttribute="trailing" secondItem="lk2-C4-Wdc" secondAttribute="trailing" constant="20" id="sFm-ql-Cys"/>
+                                        <constraint firstAttribute="bottom" secondItem="ehw-Au-DOB" secondAttribute="bottom" constant="10" id="yxJ-go-sQ5"/>
                                     </constraints>
                                 </view>
                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UQX-YQ-6Pq">
@@ -102,7 +113,35 @@
                                         <constraint firstItem="Fgf-aU-7su" firstAttribute="top" secondItem="UQX-YQ-6Pq" secondAttribute="top" constant="20" id="udQ-FU-qNs"/>
                                     </constraints>
                                 </view>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YVM-cf-IS9">
+                                    <rect key="frame" x="0.0" y="1050" width="414" height="20"/>
+                                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="20" id="QCP-DL-Ots"/>
+                                    </constraints>
+                                </view>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ohY-BA-mq8">
+                                    <rect key="frame" x="0.0" y="1070" width="414" height="30"/>
+                                    <state key="normal" title="Recorrido 3D"/>
+                                </button>
+                                <wkWebView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Hdp-yt-5Ac">
+                                    <rect key="frame" x="0.0" y="1100" width="414" height="180"/>
+                                    <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="180" id="Cdd-kR-8DU"/>
+                                    </constraints>
+                                    <wkWebViewConfiguration key="configuration" allowsInlineMediaPlayback="YES">
+                                        <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
+                                        <wkPreferences key="preferences"/>
+                                    </wkWebViewConfiguration>
+                                </wkWebView>
                             </subviews>
+                            <constraints>
+                                <constraint firstItem="ohY-BA-mq8" firstAttribute="top" secondItem="YVM-cf-IS9" secondAttribute="bottom" id="BR6-Y7-3PA"/>
+                                <constraint firstAttribute="trailing" secondItem="ohY-BA-mq8" secondAttribute="trailing" id="Doh-qM-6bE"/>
+                                <constraint firstItem="Hdp-yt-5Ac" firstAttribute="top" secondItem="ohY-BA-mq8" secondAttribute="bottom" id="ZCZ-gr-bLD"/>
+                                <constraint firstItem="ohY-BA-mq8" firstAttribute="leading" secondItem="YPx-Dl-xbo" secondAttribute="leading" id="qyn-Le-9dc"/>
+                            </constraints>
                         </stackView>
                     </subviews>
                     <constraints>

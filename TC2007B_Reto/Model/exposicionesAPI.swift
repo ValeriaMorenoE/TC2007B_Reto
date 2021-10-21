@@ -12,7 +12,8 @@ struct Expo: Decodable {
     let id, title, startDate, description: String
     let cerraduria, museografia, salas, tecnica: String
     let obras: String?
-    let recorridoVirtual, videoURL: String?
+    let recorridoVirtual, videoUrl: String?
+    let photoUrl: String
 }
 
 struct Noticia: Decodable {
