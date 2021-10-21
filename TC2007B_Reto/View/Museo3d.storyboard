@@ -16,16 +16,10 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="circle_reg" translatesAutoresizingMaskIntoConstraints="NO" id="jYz-UF-g3p">
-                                <rect key="frame" x="-333" y="-639" width="1080" height="832"/>
-                            </imageView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo_marco_txt" translatesAutoresizingMaskIntoConstraints="NO" id="IMi-kn-IQH">
-                                <rect key="frame" x="91" y="90" width="232" height="53"/>
-                            </imageView>
                             <wkWebView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fZn-aR-t5F">
-                                <rect key="frame" x="0.0" y="193" width="414" height="669"/>
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
                                 <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <wkWebViewConfiguration key="configuration">
+                                <wkWebViewConfiguration key="configuration" allowsInlineMediaPlayback="YES">
                                     <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
                                     <wkPreferences key="preferences"/>
                                 </wkWebViewConfiguration>
@@ -34,16 +28,10 @@
                         <viewLayoutGuide key="safeArea" id="Gvh-dF-zXO"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="fZn-aR-t5F" firstAttribute="centerX" secondItem="IMi-kn-IQH" secondAttribute="centerX" id="1ww-gj-jOf"/>
-                            <constraint firstItem="fZn-aR-t5F" firstAttribute="bottom" secondItem="Gvh-dF-zXO" secondAttribute="bottom" id="3Gs-8K-q8t"/>
-                            <constraint firstItem="IMi-kn-IQH" firstAttribute="top" secondItem="Gvh-dF-zXO" secondAttribute="top" constant="46" id="9an-wK-4i1"/>
-                            <constraint firstItem="jYz-UF-g3p" firstAttribute="top" secondItem="J03-L3-26R" secondAttribute="top" constant="-639" id="BK6-fv-Z5l"/>
-                            <constraint firstItem="jYz-UF-g3p" firstAttribute="leading" secondItem="J03-L3-26R" secondAttribute="leading" constant="-333" id="DPj-jY-HQj"/>
-                            <constraint firstItem="fZn-aR-t5F" firstAttribute="top" secondItem="jYz-UF-g3p" secondAttribute="bottom" id="Pen-0k-cAT"/>
-                            <constraint firstItem="IMi-kn-IQH" firstAttribute="leading" secondItem="Gvh-dF-zXO" secondAttribute="leading" constant="91" id="Qb5-Tm-P8L"/>
-                            <constraint firstAttribute="trailing" secondItem="jYz-UF-g3p" secondAttribute="trailing" constant="-333" id="Sb4-An-D95"/>
-                            <constraint firstItem="fZn-aR-t5F" firstAttribute="leading" secondItem="Gvh-dF-zXO" secondAttribute="leading" id="Ur9-dM-LdV"/>
-                            <constraint firstItem="Gvh-dF-zXO" firstAttribute="trailing" secondItem="IMi-kn-IQH" secondAttribute="trailing" constant="91" id="soR-T1-JLW"/>
+                            <constraint firstItem="fZn-aR-t5F" firstAttribute="trailing" secondItem="Gvh-dF-zXO" secondAttribute="trailing" id="VAh-3x-6uB"/>
+                            <constraint firstItem="fZn-aR-t5F" firstAttribute="top" secondItem="Gvh-dF-zXO" secondAttribute="top" id="bb6-Uz-c9I"/>
+                            <constraint firstItem="fZn-aR-t5F" firstAttribute="leading" secondItem="Gvh-dF-zXO" secondAttribute="leading" id="hmz-0P-oIT"/>
+                            <constraint firstItem="fZn-aR-t5F" firstAttribute="bottom" secondItem="Gvh-dF-zXO" secondAttribute="bottom" id="tmH-2F-2bd"/>
                         </constraints>
                     </view>
                     <connections>
@@ -56,8 +44,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="circle_reg" width="1080" height="832"/>
-        <image name="logo_marco_txt" width="288" height="53"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

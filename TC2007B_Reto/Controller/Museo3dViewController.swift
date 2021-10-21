@@ -15,6 +15,8 @@ class Museo3dViewController: UIViewController {
     
     override func viewDidLoad() {
         guard let url = URL(string: link ?? "https://www.museomarco.360s.mx") else {return}
+        //let configuration = WKWebViewConfiguration()
+        //configuration.allowsInlineMediaPlayback = true
         wevView.load(URLRequest(url: url))
     }
     
