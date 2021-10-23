@@ -17,6 +17,7 @@ class expoVC: UIViewController {
     @IBOutlet weak var cerraduriaLbl: UILabel!
     @IBOutlet weak var museografiaLbl: UILabel!
     @IBOutlet weak var imagenImg: UIImageView!
+    @IBOutlet weak var imgContainer: UIView!
     @IBOutlet weak var webView: WKWebView!
     @IBOutlet weak var recorridoBtn: UIButton!
     
@@ -27,7 +28,7 @@ class expoVC: UIViewController {
         
         tituloLbl.text = expo.title
         fechaLbl.text = expo.startDate
-        salasLbl.text = expo.salas
+        salasLbl.text = "Disponible en sala: " + expo.salas
         descLbl.text = expo.description
         cerraduriaLbl.text = "Curaduría: " + expo.cerraduria
         museografiaLbl.text = "Museografía: " + expo.museografia

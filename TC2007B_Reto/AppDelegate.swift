@@ -20,19 +20,18 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             if user != nil {
                 let exposiciones = expoMenuViewController(nibName: "expoMenuViewController", bundle: nil)
                 let boletos = TicketRestaurantController(nibName: "TicketRestaurantController", bundle: nil)
-                let museo3dStoryboard = UIStoryboard(name: "Museo3d", bundle: nil)
-                let museo3dvc = museo3dStoryboard.instantiateViewController(identifier: "Museo3dViewController") as! Museo3dViewController
+                let perfil = perfilViewController(nibName: "perfilViewController", bundle: nil)
                 let noticias = noticiasViewController(nibName: "noticiasViewController", bundle: nil)
                 let eventos = eventosViewController(nibName: "eventosViewController", bundle: nil)
                 
                 let tabBarController = UITabBarController()
-                tabBarController.viewControllers = [noticias, exposiciones, eventos, boletos, museo3dvc]
+                tabBarController.viewControllers = [noticias, exposiciones, eventos, boletos, perfil]
                 
                 noticias.tabBarItem = UITabBarItem(title: "Noticias", image: UIImage(systemName: "newspaper"), tag: 0)
-                exposiciones.tabBarItem = UITabBarItem(title: "Exposiciones", image: UIImage(systemName: "magazine"), tag: 1)
+                exposiciones.tabBarItem = UITabBarItem(title: "Exposiciones", image: UIImage(systemName: "book"), tag: 1)
                 boletos.tabBarItem = UITabBarItem(title: "Comprar Boletos", image: UIImage(systemName: "calendar"), tag: 3)
-                museo3dvc.tabBarItem = UITabBarItem(title: "Museo 3D", image: UIImage(systemName: "view.3d"), tag: 4)
-                eventos.tabBarItem = UITabBarItem(title: "Marco Hoy", image: UIImage(systemName: "doc.text.image"), tag: 2)
+                perfil.tabBarItem = UITabBarItem(title: "Perfil", image: UIImage(systemName: "person"), tag: 4)
+                eventos.tabBarItem = UITabBarItem(title: "Marco Hoy", image: UIImage(systemName: "clock"), tag: 2)
                 
 
                 // Make it root or what ever you want here

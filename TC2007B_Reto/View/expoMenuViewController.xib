@@ -11,6 +11,8 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="expoMenuViewController" customModule="TC2007B_Reto" customModuleProvider="target">
             <connections>
+                <outlet property="frameImg" destination="7hS-cw-4Oz" id="WgA-fH-aJw"/>
+                <outlet property="frameImgColor" destination="C1k-18-LoM" id="Pok-hJ-PsW"/>
                 <outlet property="tableView" destination="0wb-YR-fB2" id="Akn-86-Wa3"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
@@ -21,22 +23,48 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="0wb-YR-fB2">
-                    <rect key="frame" x="2" y="54" width="410" height="798"/>
+                    <rect key="frame" x="2" y="220" width="410" height="582"/>
                     <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                 </tableView>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="exposicion2_1" translatesAutoresizingMaskIntoConstraints="NO" id="7hS-cw-4Oz">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="200"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="200" id="B6l-jp-pNG"/>
+                    </constraints>
+                </imageView>
+                <view alpha="0.20000000000000001" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="C1k-18-LoM">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="200"/>
+                    <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                </view>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Exposiciones" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hnO-8y-jfZ">
+                    <rect key="frame" x="79" y="120" width="256.5" height="48"/>
+                    <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="40"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
             </subviews>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
             <constraints>
-                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="0wb-YR-fB2" secondAttribute="bottom" constant="10" id="Y4I-ev-JDw"/>
-                <constraint firstItem="0wb-YR-fB2" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="10" id="qoB-FR-bHh"/>
+                <constraint firstItem="hnO-8y-jfZ" firstAttribute="top" secondItem="7hS-cw-4Oz" secondAttribute="top" constant="120" id="9k1-NQ-ORt"/>
+                <constraint firstItem="7hS-cw-4Oz" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="DYz-dv-tyy"/>
+                <constraint firstItem="7hS-cw-4Oz" firstAttribute="bottom" secondItem="C1k-18-LoM" secondAttribute="bottom" id="E7d-60-LAN"/>
+                <constraint firstItem="7hS-cw-4Oz" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="I7H-Ab-xwa"/>
+                <constraint firstItem="C1k-18-LoM" firstAttribute="trailing" secondItem="7hS-cw-4Oz" secondAttribute="trailing" id="NAf-4w-AA5"/>
+                <constraint firstItem="0wb-YR-fB2" firstAttribute="top" secondItem="7hS-cw-4Oz" secondAttribute="bottom" constant="20" id="RZi-my-REM"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="0wb-YR-fB2" secondAttribute="bottom" constant="60" id="Y4I-ev-JDw"/>
+                <constraint firstItem="C1k-18-LoM" firstAttribute="top" secondItem="7hS-cw-4Oz" secondAttribute="top" id="aeh-wO-dZp"/>
+                <constraint firstItem="C1k-18-LoM" firstAttribute="leading" secondItem="7hS-cw-4Oz" secondAttribute="leading" id="gbn-t6-XGM"/>
+                <constraint firstItem="hnO-8y-jfZ" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="pcb-Ur-bJe"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="0wb-YR-fB2" secondAttribute="trailing" constant="2" id="stt-Tn-wuc"/>
+                <constraint firstItem="7hS-cw-4Oz" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="y8w-6q-qrX"/>
                 <constraint firstItem="0wb-YR-fB2" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="2" id="zSe-IG-qIK"/>
             </constraints>
-            <point key="canvasLocation" x="133" y="109"/>
+            <point key="canvasLocation" x="131.8840579710145" y="108.48214285714285"/>
         </view>
     </objects>
     <resources>
+        <image name="exposicion2_1" width="600" height="400"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
